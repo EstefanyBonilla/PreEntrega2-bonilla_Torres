@@ -3,9 +3,7 @@
     margin: 0;
 }
 
-body {
-    font-family: "Spectral", serif;
-}
+
 
 .nav-link:hover {
     color: #f80d0d;
@@ -15,15 +13,9 @@ body {
     width: auto;
 }
 
-.navbar-index {
-    background-color: #3f41417a;
-   
-}
 
-.nav-link {
-   color: rgb(51, 102, 196); 
-    
-}
+
+
 
 .paginas {
     height: 50px;
