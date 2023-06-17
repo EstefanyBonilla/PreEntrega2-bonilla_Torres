@@ -3,7 +3,9 @@
     margin: 0;
 }
 
-
+.nav-link {
+    color: #050505;
+}
 
 .nav-link:hover {
     color: #f80d0d;
@@ -11,12 +13,9 @@
  
 .offcanvas-end {
     width: auto;
+    
 }
 
-
-
-
-
-.paginas {
+.altura-header {
     height: 50px;
 }
