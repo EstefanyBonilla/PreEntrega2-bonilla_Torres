@@ -19,3 +19,25 @@
 .altura-header {
     height: 50px;
 }
+.texto-img {
+    text-align: center;
+    position: absolute;
+    top: 95%;
+    left: 60%;
+    transform: translate(-60%, -60%);
+    color: white;
+}
+.animacion {
+    animation: fadeInDown; 
+    animation-duration: 2s; 
+}
+@keyframes fadeInDown {
+    from {
+        top: 60%;
+        left: 60%;
+    }
+    to {
+        top: 95%;
+        left: 60%;
+    }
+}
