@@ -3,6 +3,11 @@
     margin: 0;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Spectral&display=swap");
+
+body {
+    font-family: "Spectral", serif;
+} 
 .nav-link {
     color: #050505;
 }
@@ -19,25 +24,26 @@
 .altura-header {
     height: 50px;
 }
-.texto-img {
+.texto-flotante {
     text-align: center;
     position: absolute;
-    top: 95%;
+    top: 75%;
     left: 60%;
     transform: translate(-60%, -60%);
     color: white;
 }
+
 .animacion {
     animation: fadeInDown; 
     animation-duration: 2s; 
 }
 @keyframes fadeInDown {
     from {
-        top: 60%;
+        top: 40%;
         left: 60%;
     }
     to {
-        top: 95%;
+        top: 75%;
         left: 60%;
     }
 }

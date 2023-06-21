@@ -20,68 +20,78 @@
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="container-fluid">
-        <div class="card">
-            <!-- Imagen de portada -->
-            <img src="./img/1c.jpg" class="card-img" alt="Estudiante sentada posando para foto">
-            <!-- Imagen de portada -->
-
-            <div class="card-img-overlay">
-                <a class="navbar-brand d-flex pt-5" href="index.html">  
+    <!-- Header  -->
+    <header >
+        <!-- Zona navegable  -->
+        <nav class="navbar navbar-expand-lg py-0" >
+            <div class="container-fluid altura-header">
+                <!-- Enlace -->
+                <a class="navbar-brand d-flex " href="index.html">  
                     <!-- Logo -->
-                    <img src="./img/logo.png" alt="Logo de la escuela" width="80" height="80" class="logo rounded-circle"  >
+                    <img src="./img/logo.png" alt="logo de la escuela" width="40" height="40" class="logo rounded-circle  "  >
                     <!-- Logo -->
-                    <!-- Titulo -->
-                    <p class="fs-1 ps-2 pt-2 fw-bold text-white">COLEGIO VS</p>
-                    <!-- Titulo -->
+                    <!-- Titulo -->    
+                    <p class="fs-3 ps-2  pb-0 mb-0 fw-bold text-dark">COLEGIO VS</p>
+                    <!-- Titulo --> 
                 </a>
-                <!-- Zona navegable -->
-                <nav class="navbar navbar-expand-lg  fixed-top  container-fluid pb-3 bg-light altura-header">
-                    <a class="navbar-brand" href="#"></a>
-                    <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="offcanvas offcanvas-end container" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-                       <ul class="navbar-nav fw-bolder  ">
-                            <!-- Menu -->
-                            <li class="nav-item"><a class="nav-link "  href="index.html">INICIO</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/niveles.html">NIVELES ACADEMICOS</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">GALERÍA</a>
-                            </li>
-                            <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
-                            </li>
-                            <!-- Menu -->
-                        </ul>
-                    </div>
-                </nav>
-                <!-- Zona navegable -->
-                <!-- Animacion -->
-                <div class="row ">
-                    <p class="fs-1 texto-img animacion">El mejor lugar para aprender</p>
+                <!-- Enlace -->
+
+                
+                <!-- Boton  -->
+                <button class="navbar-toggler  navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Boton  -->
+                <div class="offcanvas offcanvas-end container " tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <ul class="navbar-nav fw-bolder justify-content-end ">
+                        <!-- Menu -->
+                        <li class="nav-item"><a class="nav-link"  href="index.html">INICIO</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/niveles.html">NIVELES ACADEMICOS</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/galeria.html">GALERÍA</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
+                        </li>
+                        <!-- Menu -->
+                    </ul>
                 </div>
-                <!-- Animacion -->
-            </div>
-        </div>
+            </div>        
+        </nav>
+        <!-- Zona navegable -->    
     </header>
+    <!-- Header  -->
+    <div class=" container-fluid card">
+        
+        <!-- Animacion -->
+        <div class="row ">
+            <!-- Imagen de portada -->
+        <img src="./img/1c.jpg" class="card-img" alt="Estudiante sentada posando para foto">
+        <!-- Imagen de portada -->
+                   
+            <p class="fs-1 texto-flotante animacion">El mejor lugar para aprender</p>
+           
+        </div>
+        <!-- Animacion -->
+    </div>
+    <!-- Header -->
+    
     <!-- Termina header -->
     
     <!-- Main -->
     <main class="container-fluid">
         <div class="card mb-3 pt-4 ">
             <div class="row g-0">
-              <div class="col-md-4" >
+              <div class="col-lg-6 ">
                 <!-- Imagen -->
                 <img src="./img/1s.jpg" class="img-fluid"   alt="Niño tocando estatuilla del cuerpo humano">
                 <!-- imagen -->
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h2 class="card-title">Trabajamos en ambientes sanos que les permitan a nuestros estudiantes desarrollarse como seres humanos.</h2>
+              <div class="col-lg-6 ">
+                <div class="card-body ">
+                  <h3 class="card-title ">Trabajamos en ambientes sanos que les permitan a nuestros estudiantes desarrollarse como seres humanos.</h3>
                   <h5 class="card-text">Durante el proceso de formación del carácter emocional y académico de nuestros estudiantes, la educación básica se destaca como fundamental. Por lo tanto, nos enfocamos en atender tanto las necesidades individuales como las grupales.
 
                     Trabajamos en conjunto con la enseñanza en el hogar para fortalecer los conocimientos de los estudiantes y brindarles las herramientas necesarias que les serán útiles en su futuro.</h5>
@@ -202,7 +212,7 @@
         <div class="row">
             <!-- Grid row -->
             <div class="col-lg-4 ">
-                <a class="navbar-brand d-flex pt-3" href="index.html">  
+                <a class="navbar-brand d-flex pt-3" href="index.hml">  
                      <!-- Imagen -->
                     <img src="./img/logo.png" alt="logo de la escuela" width="80" height="80" class="logo rounded-circle"  >
                     <!-- Imagen -->
