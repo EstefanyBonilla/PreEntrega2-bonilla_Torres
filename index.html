@@ -3,48 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">    
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <!-- bootstrap -->
+    <meta name="description" content="Colegio VS. Educacion preescolar y primaria.">
+    <!-- Libreria -->
+    <link href="./libreria/animate.css/animate.min.css" rel="stylesheet">
+    <link href="./libreria/aos/aos.css" rel="stylesheet">
+    <link href="./libreria/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./libreria/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="./libreria/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="./libreria/remixicon/remixicon.css" rel="stylesheet">
+    <link href="./libreria/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <!-- Libreria -->
     <!-- Favicon -->
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon"> 
-     <!-- Favicon -->
-     <!-- Hoja de estilo -->
+    <!-- Favicon -->
+    <!-- Hoja de estilo -->
     <link rel="stylesheet" href="./css/style.css">
-     <!-- Hoja de estilo -->
-     <!-- Titulo -->
+    <!-- Hoja de estilo -->
+    <!-- Titulo --> 
     <title>Escuela</title>
     <!-- Titulo -->
 </head>
 
+
 <body>
     <!-- Header  -->
-    <header >
+    <header>
         <!-- Zona navegable  -->
         <nav class="navbar navbar-expand-lg py-0" >
-            <div class="container-fluid altura-header">
+            <!-- Contenedor fluido -->
+            <div class="container-fluid">
                 <!-- Enlace -->
-                <a class="navbar-brand d-flex " href="index.html">  
+                <a class="navbar-brand d-flex pt-1" href="index.html">  
                     <!-- Logo -->
-                    <img src="./img/logo.png" alt="logo de la escuela" width="40" height="40" class="logo rounded-circle  "  >
+                    <img src="./img/logo.png" alt="logo de la escuela" width="50" height="50" class="logo mt-1 rounded-circle  "  >
                     <!-- Logo -->
                     <!-- Titulo -->    
-                    <p class="fs-3 ps-2  pb-0 mb-0 fw-bold text-dark">COLEGIO VS</p>
+                    <p class="fs-1 ps-2 pb-0  mb-0 fw-bold text-dark">COLEGIO VS</p>
                     <!-- Titulo --> 
                 </a>
                 <!-- Enlace -->
 
-                
                 <!-- Boton  -->
                 <button class="navbar-toggler  navbar-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!-- Boton  -->
+                <!-- Contenedor -->
                 <div class="offcanvas offcanvas-end container " tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+                    <!-- Lista desordenada -->
                     <ul class="navbar-nav fw-bolder justify-content-end ">
-                        <!--11 Menu -->
+                        <!--Lista ordenada Menu -->
                         <li class="nav-item"><a class="nav-link"  href="index.html">INICIO</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./pages/nosotros.html">NOSOTROS</a>
@@ -55,239 +63,309 @@
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">CONTACTO</a>
                         </li>
-                        <!-- Menu -->
+                        <!--Lista ordenada Menu -->
                     </ul>
+                    <!-- Lista desordenada -->
                 </div>
-            </div>        
+                <!-- Contenedor -->
+            </div>  
+            <!-- Contenedor fluido -->      
         </nav>
-        <!-- Zona navegable -->    
+        <!-- Zona navegable --> 
+
+
+        <section id="inicio" class="d-flex justify-content-center align-items-center">
+            <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+              <h1 class="text-center ">El mejor lugar para aprender</h1>
+            </div>
+        </section>
+
     </header>
-    <!-- Header  -->
-    <div class=" container-fluid card">
-        
-        <!-- Animacion -->
-        <div class="row ">
-            <!-- Imagen de portada -->
-        <img src="./img/1c.jpg" class="card-img" alt="Estudiante sentada posando para foto">
-        <!-- Imagen de portada -->
-                   
-            <p class="fs-1 texto-flotante animacion">El mejor lugar para aprender</p>
-           
-        </div>
-        <!-- Animacion -->
-    </div>
     <!-- Header -->
-    
-    <!-- Termina header -->
-    
+
     <!-- Main -->
-    <main class="container-fluid">
-        <div class="card mb-3 pt-4 ">
-            <div class="row g-0">
-              <div class="col-lg-6 ">
+    <main class="container">
+
+        <!-- Section descripcion -->
+        <section class="row info m-lg-4" data-aos="fade-up">
+            <!-- Grid column -->
+            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
                 <!-- Imagen -->
                 <img src="./img/1s.jpg" class="img-fluid"   alt="Niño tocando estatuilla del cuerpo humano">
                 <!-- imagen -->
-              </div>
-              <div class="col-lg-6 ">
-                <div class="card-body ">
-                  <h3 class="card-title ">Trabajamos en ambientes sanos que les permitan a nuestros estudiantes desarrollarse como seres humanos.</h3>
-                  <h5 class="card-text">Durante el proceso de formación del carácter emocional y académico de nuestros estudiantes, la educación básica se destaca como fundamental. Por lo tanto, nos enfocamos en atender tanto las necesidades individuales como las grupales.
-
-                    Trabajamos en conjunto con la enseñanza en el hogar para fortalecer los conocimientos de los estudiantes y brindarles las herramientas necesarias que les serán útiles en su futuro.</h5>
-                  
-                </div>
-              </div>
             </div>
-        </div>
-    </main>
+            <!-- Grid column -->
 
-    <!-- seccion de niveles educativos -->w
-    <section class=" container-fluid bg-light">
-        <div class="card-group p-4 text-center " >
-            <div class=" card col-lg-4 m-4 justify-content-center "  > 
-                <h1>
+            <!-- Grid column -->
+            <div class="col-lg-6 order-2 order-lg-1 contenido">
+                <!-- Texto -->
+                <h4 class="fw-bold">Trabajamos en ambientes sanos que les permiten a nuestros estudiantes desarrollarse como seres humanos saludables.
+                </h4>
+                <!-- Texto -->
+                <hr>
+                <!-- Texto -->
+                <p> Durante el proceso de formación del carácter emocional y académico de nuestros estudiantes, la educación básica se destaca como fundamental. Por lo tanto, nos enfocamos en atender tanto las necesidades individuales como las grupales. Creemos que el modelo educativo que ofrecemos en conjunto con la enseñanza en el hogar fortalece los conocimientos de los estudiantes facilitando las herramientas necesarias que les serán útiles en su futuro.
+                </p>
+                <!-- Texto -->
+            </div>
+            <!-- Grid column -->
+        </section>
+        <!-- Section descripcion -->
+
+        <!-- seccion de niveles educativos -->
+        <section class="row text-center" data-aos="fade-right">
+
+            <!-- Grid column -->
+            <div class="card col-lg-4 col-md-12 justify-content-center  nvlEducativo"   >
+                <!-- Texto --> 
+                <h2 >
                     Niveles Educativos
-                </h1>
+                </h2>
+                <!-- Texto -->
             </div>
+            <!-- Grid column -->
 
-            <div class="card  col-lg-4 m-4">
+            <!-- Grid column -->
+            <div class="col-lg-4 col-sm-6 ">
                 <!-- Imagen -->
                 <img src="./img/preescolar.jpg" class="card-img-top" alt="Niños preescolares jugando">
                 <!-- Imagen -->
-                <div class="card-body">
-
-                <h5 class="card-title">Preescolar</h5>
-                </div>
+                <!-- Texto -->
+                <h4 >Preescolar</h4>
+                <!-- Texto -->
             </div>
+            <!-- Grid column -->
 
-            <div class="card col-lg-4 m-4">
+            <!-- Grid column -->
+            <div class="col-lg-4 col-sm-6 ">
                 <!-- Imagen -->
                 <img src="./img/primaria.jpg" class="card-img-top" alt="Niña sentana en aula">
                 <!-- Imagen -->
-                <div class="card-body">
-                <h5 class="card-title">Primaria</h5>
-                </div>
+                <!-- Texto -->
+                <h4>Primaria</h4>
+                <!-- Texto -->
             </div>
-        </div>
-    </section>
-    <!-- Termina section de niveles educativos -->
-    <br>
-    <!-- seccion de materias extracurriculares -->
-    <section class="container-fluid bg-light">
-        <div class="row pt-4 text-center justify-content-center">
-            <div class="bg-primary ">
-                <h1>
-                    Aprendiendo al maximo
-                </h1>
-            </div>
+            <!-- Grid column -->
+        </section>
+        <!-- Section niveles educativos -->
 
-            <div class="col-12 col-md-4 m-4">
-                <div class="card" >
-                    <h3 class="card-header">
-                            Arte
-                    </h3>
-                    <!-- Imagen -->
-                    <img src="./img/artes.jpg"  class="card-img" alt="Niña pintando pieza de fieltro">
-                    <!-- Imagen -->
-                    <p class="card-text fs-5">
-                         Se ofrecen diversos talleres en donde los estudiantes pueden sacar todo su potencial.
-                    </p>
+        <!-- seccion de materias extracurriculares -->
+        <section>
+            <div class="row text-center justify-content-center education" data-aos="fade-left">
+                
+                <!-- Grid column -->
+                <div class="col-12 pt-4 ">
+                    <!-- Texto -->
+                    <h2>
+                        Aprendiendo al maximo
+                    </h2>
+                    <!-- Texto -->
                 </div>
-            </div>  
-            <div class="col-12 col-md-4 m-4">
-                <div class="card" >
-                    <h3 class="card-header">
-                        Escuela bilingüe
-                    </h3>
-                    <!-- Imagen -->
-                    <img src="./img/ingles.jpg"  class="card-img" alt="Alumnos en aula de ingles">
-                    <!-- Imagen -->
-                    <p class="card-text fs-5">
-                        Aprender cuando antes es la clave para la pronta practica.
-                    </p>
-                </div>
-            </div> 
-            <div class="col-12 col-md-4 m-4">
-                <div class="card">
-                    <h3 class="card-header">
-                        Deportes
-                    </h3>
-                    <!-- Imagen -->
-                    <img src="./img/deporte.jpg"  class="card-img" alt="Niños flexionando">
-                    <!-- Imagen -->
-                    <p class="card-text fs-5">
-                        Los estudiantes adoran estar al aire libre, por lo que se les motiva a jugar diversos deportes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Termina section  -->
+                <!-- Grid column -->
+    
+                <!-- Grid column -->
+                <div class="col-12  col-md-4 m-2 m-md-0 ">
+                    <!-- Tarjeta -->
+                    <div class="card border-white">
+                        <!-- Texto -->
+                        <h3 class="cardHeader">
+                                Arte
+                        </h3>
+                        <!-- Texto -->
+                        <!-- Imagen -->
+                        <img src="./img/artes.jpg"  class="card-img" alt="Niña pintando pieza de fieltro">
+                        <!-- Imagen -->
+                        <!-- Texto -->
+                        <p class="card-text fs-5 pb-3">
+                            Se ofrecen diversos talleres en donde los estudiantes pueden sacar todo su potencial.
+                        </p>
+                        <!-- Texto -->
+                    </div>
+                    <!-- Tarjeta -->
+                </div> 
+                <!-- Grid column -->
 
-    <!-- seccion de contacto -->
-    <section class="container-fluid bg-primary "> 
-        <div class="pb-3">
-            <div class="row pt-4 text-center ">
+                <!-- Grid column --> 
+                <div class="col-12 col-md-4 m-2 m-md-0">
+                    <!-- Tarjeta -->
+                    <div class="card border-white">
+                        <!-- Texto -->
+                        <h3 class="cardHeader">
+                            Escuela bilingüe
+                        </h3>
+                        <!-- Texto -->
+                        <!-- Imagen -->
+                        <img src="./img/ingles.jpg"  class="card-img" alt="Alumnos en aula de ingles">
+                        <!-- Imagen -->
+                        <!-- Texto -->
+                        <p class="card-text fs-5">
+                            Aprender cuando antes es la clave para practicar y seguir creciendo el conocimiento.
+                        </p>
+                        <!-- Texto -->
+                    </div>
+                    <!-- Tarjeta -->
+                </div> 
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-4 m-2 m-md-0">
+                    <!-- Tarjeta -->
+                    <div class="card border-white">
+                        <!-- Texto -->
+                        <h3 class=" cardHeader">
+                            Deportes
+                        </h3>
+                        <!-- Texto -->
+                        <!-- Imagen -->
+                        <img src="./img/deporte.jpg"  class="card-img" alt="Niños flexionando">
+                        <!-- Imagen -->
+                        <!-- Texto -->
+                        <p class="card-text fs-5">
+                            Los estudiantes adoran estar al aire libre, por lo que se les motiva a jugar diversos deportes.
+                        </p>
+                        <!-- Texto -->    
+                    </div>
+                    <!-- Tarjeta -->
+                </div>
+                <!-- Grid column -->
+            </div>
+        </section>
+        <!-- Termina section  -->
+
+        <!-- seccion de contacto -->
+        <section class="text-center  invitacion"> 
+            <!-- Grid row -->
+            <div class="row">
+                <!-- Texto -->
                 <h4>
-                    ¿Qué esperas para agendar tu cita ?
+                    ¿Qué esperas para agendar tu cita?
                 </h4>
+                <!-- Texto -->
             </div>
-            <div class="row text-center" >
+            <!-- Grid row -->
+            <div class="row" >
+                <!-- Texto -->
                 <h2 class="fw-bold">
-                    Forma parte de la comunidad
+                    Forma parte de la comunidad ya!
                 </h2>
+                <!-- Texto -->
             </div>
-            <!-- boton -->
-            <button  type="button" class="btn btn-warning col-lg-2 mx-auto d-grid mb-2" >
+            <!-- Grid row -->
+            <!-- Boton -->
+            <button  type="button" class="btn col-lg-2">
                 <!-- Enlace-->
-                <a  class="text-decoration-none" href="./pages/contacto.html"> Agendar cita</a> 
+                <a  class="text-decoration-none btnAll" href="./pages/contacto.html">Agendar cita</a> 
                 <!-- Enlace-->
             </button>
-        </div>
-    </section>
-    <!-- Termina section de contacto -->
-    <!-- Footer -->
-    <footer class="container-fluid bg-warning"> 
-        <!-- Elementos de footer -->
-        <div class="row">
+            <!-- Boton -->
+        </section>
+        <!-- Termina section de contacto -->
+        
+        <hr class="m-0">
+        <!-- section  -->
+        <section>
             <!-- Grid row -->
-            <div class="col-lg-4 ">
-                <a class="navbar-brand d-flex pt-3" href="index.hml">  
-                     <!-- Imagen -->
-                    <img src="./img/logo.png" alt="logo de la escuela" width="80" height="80" class="logo rounded-circle"  >
-                    <!-- Imagen -->
-                    <!-- Titulo -->
-                     <p class="fs-1 ps-2 pt-3 fw-bold text-dark">COLEGIO VS</p>
-                     <!-- Titulo -->
+        <div class=" f-info row">
+            <!-- Grid column -->
+            <div class="f-content col-12 col-lg-4">
+                <!-- Enlace-->
+                <a class="text-decoration-none pt-4 d-flex" href="index.html">  
+                    <!-- Logo -->
+                    <img src="./img/logo.png" alt="logo de la escuela" width="40" height="40" class="logo rounded-circle  "  >
+                    <!-- Logo -->
+                    <!-- Titulo -->    
+                    <p class="fs-3 ps-2  fw-bold text-dark titulo">COLEGIO VS</p>
+                    <!-- Titulo --> 
                 </a>
+                <!-- Enlace-->
             </div>  
-            <!-- Leyenda -->
-            <div class="align-self-center col-lg-4 text-center mt-2">
-                <h4>Nuestra mision es que nuestros estudiantes obtengan una educacion completa.</h4>
+            <!-- Grid column -->
+
+            <!-- Grid column -->
+            <div class="align-self-center text-center pt-2 f-content col-12 col-lg-4 ">
+                <!-- Leyenda -->
+                <h4 class="leyenda">Nuestra mision es que nuestros estudiantes obtengan una educacion completa.</h4>
+                <!-- Leyenda -->
             </div>
-            <!-- Leyenda -->
-            <div class="col-lg-4 mt-2">       
+            <!-- Grid column -->
+            
+
+            <!-- Grid column -->
+            <div class="f-content col-12 col-lg-4 pt-2 pb-1">       
                 <!-- Ubicacion -->
-                <iframe class="map d-flex ps-4" width="mx-auto" height="100"
+                <iframe class="map d-flex " width="100%" height="100"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241599.71168187525!2d47.347704353481895!3d-18.887281034181697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07de34f1f4eb3%3A0xdf110608bcc082f9!2sAntananarivo%2C%20Madagascar!5e0!3m2!1ses!2smx!4v1686959399820!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy">
                 </iframe>
                 <!-- Ubicacion -->
             </div> 
-           
+            <!-- Grid column -->
+
+            <!-- Elementos de footer -->
         </div>
-       
+        </section>
+        <!-- section  -->
+    </main>
+    <!-- Main -->
+
+    <!-- Footer -->
+    <footer class="container-fluid  "> 
+        <!-- Elementos de footer -->
         <!-- Grid row-->
         <div class="row ">
-            <div class="col-md-12 py-1">
-                <div class=" d-flex justify-content-center ">
-                    <!-- Facebook icon -->
-                    <a class="m-1 " href="https://www.facebook.com/">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-                            </svg>
-                    </a>
-                    <!-- Facebook icon -->
-                
-                    
-                    <!-- Mensaje icon -->
-                    <a class="m-1" href="mailto:Usuario@COLEGIOVS.com">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
-                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
-                            </svg>
-                    </a>
-                    <!-- Mensaje icon -->
-                
-                    <!-- Telefono icon -->
-                    <a class="m-1" href="tel:555-555-5555">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
-                            <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
-                            </svg>
-                        
-                        </i>  
-                    </a>
-                    <!-- Telefono icon -->
-                </div>
-            </div> 
+            <!-- Copyright -->
+            <div class=" col-sm-6 fCopyright text-center">© 2023 Copyright:
+                <!-- Enlace-->
+                <a class="text-decoration-none text-white " href="index.html">COLEGIO VS</a>
+                <!-- Enlace-->
+            </div>
+            <!-- Copyright -->
+
             <!-- Grid column -->
+            <div class="icons  col-sm-6  justify-content-center d-flex">
+                <!-- Enlace-->
+                <a class="icon " href="https://www.facebook.com/">
+                    <!-- Facebook icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                    </svg>
+                    <!-- Facebook icon -->
+                </a>
+                <!-- Enlace-->
+            
+                <!-- Enlace-->
+                <a class="icon " href="mailto:Usuario@COLEGIOVS.com">
+                    <!-- Mensaje icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
+                    </svg>
+                    <!-- Mensaje icon -->
+                </a>
+                <!-- Enlace-->
+                
+                <!-- Enlace-->
+                <a class="icon " href="tel:555-555-5555">
+                    <!-- Telefono icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+                    </svg>
+                    <!-- Telefono icon -->
+                </a>
+                <!-- Enlace-->
+            </div> 
+            <!-- Grid column -->  
         </div>
         <!-- Grid row-->
-
-        <!-- Footer Elements -->
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-2">© 2023 Copyright:
-            <!-- Enlace-->
-            <a  class="footer-href text-decoration-none" href="../index.html"> COLEGIO VS
-            </a>
-            <!-- Enlace-->
-        </div>
-        <!-- Copyright -->
+        <!-- Elementos de footer -->
     </footer>
-    <!-- Termina footer -->
-    
+    <!-- Footer -->
 
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.2/dist/umd/popper.min.js" integrity="sha384-q9CRHqZndzlxGLOj+xrdLDJa9ittGte1NksRmgJKeCV9DrM7Kz868XYqsKWPpAmn" crossorigin="anonymous"></script>
+    <!-- Libreria JS -->
+  <script src="./libreria/aos/aos.js"></script>
+  <script src="./libreria/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="./libreria/swiper/swiper-bundle.min.js"></script>
+
+   <!-- JS main -->
+   <script src="./js/main.js"></script>
+ 
 </body>
 </html>
