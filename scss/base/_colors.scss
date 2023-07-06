@@ -1,0 +1,16 @@
+$clr-1: #050536;
+$clr-2: #ebb609;
+$clr-3: #ffffff;
+$clr-4: #82BDFF
+
+.btnAll{
+    color: #ffffff;
+    background-color: $clr-4;
+    background-image: linear-gradient(to bottom, $clr-4, $clr-1);
+    &:hover {
+        color: #ffffff;
+        background-color: $clr-1;
+        background-image: linear-gradient(to bottom, $clr-1, $clr-4);
+
+    }
+}
