@@ -2,11 +2,11 @@
  @import './base/maps';
  @import './base/extend';
  @import'./base/mixin';
+
 //  Primero se importan los archivos de base para que se lean primero y poder llamarlos en layout
 
-@import './componentes/button';
-
-@import './layout/card';
-@import './layout/header';
-@import './layout/footer';
-@import './layout/form';
+@import './componentes/card';
+@import './componentes/header';
+@import './componentes/footer';
+@import './componentes/form';
+@import './componentes/section';

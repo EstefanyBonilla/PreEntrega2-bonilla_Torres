@@ -38,7 +38,7 @@
                     <img src="./img/logo.png" alt="logo de la escuela" width="50" height="50" class="logo mt-1 rounded-circle  "  >
                     <!-- Logo -->
                     <!-- Titulo -->    
-                    <p class="fs-1 ps-2 pb-0  mb-0 fw-bold text-dark">COLEGIO VS</p>
+                    <h1 class="fs-1 ps-2 pb-0  mb-0 fw-bold text-dark titulo">COLEGIO VS</h1>
                     <!-- Titulo --> 
                 </a>
                 <!-- Enlace -->
@@ -51,7 +51,7 @@
                 <!-- Contenedor -->
                 <div class="offcanvas offcanvas-end container " tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
                     <!-- Lista desordenada -->
-                    <ul class="navbar-nav fw-bolder justify-content-end ">
+                    <ul class="navbar-nav fw-bolder justify-content-end listaDesordenada">
                         <!--Lista ordenada Menu -->
                         <li class="nav-item"><a class="nav-link"  href="index.html">INICIO</a>
                         </li>
@@ -73,31 +73,31 @@
         </nav>
         <!-- Zona navegable --> 
 
-
+        <!-- Imagen de portada con animacion -->
         <section id="inicio" class="d-flex justify-content-center align-items-center">
             <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
               <h1 class="text-center ">El mejor lugar para aprender</h1>
             </div>
         </section>
-
+        <!-- Imagen de portada con animacion -->
     </header>
     <!-- Header -->
 
     <!-- Main -->
-    <main class="container">
+    <main class="container index">
 
         <!-- Section descripcion -->
         <section class="row info m-lg-4" data-aos="fade-up">
             <!-- Grid column -->
-            <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <div class="col-lg-6 order-1 order-lg-2 divImgPresentacion" data-aos="fade-left" data-aos-delay="100">
                 <!-- Imagen -->
-                <img src="./img/1s.jpg" class="img-fluid"   alt="Niño tocando estatuilla del cuerpo humano">
+                <img src="./img/1s.jpg" class="img-fluid cuerpoHumano"   alt="Niño tocando estatuilla del cuerpo humano">
                 <!-- imagen -->
             </div>
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-6 order-2 order-lg-1 contenido">
+            <div class="col-lg-6 order-2 order-lg-1 divContenido">
                 <!-- Texto -->
                 <h4 class="fw-bold">Trabajamos en ambientes sanos que les permiten a nuestros estudiantes desarrollarse como seres humanos saludables.
                 </h4>
@@ -113,10 +113,10 @@
         <!-- Section descripcion -->
 
         <!-- seccion de niveles educativos -->
-        <section class="row text-center" data-aos="fade-right">
+        <section class="row text-center secNiveles" data-aos="fade-right">
 
             <!-- Grid column -->
-            <div class="card col-lg-4 col-md-12 justify-content-center  nvlEducativo"   >
+            <div class="card col-lg-4 col-md-12 justify-content-center border-white nvl nvlEducativo"   >
                 <!-- Texto --> 
                 <h2 >
                     Niveles Educativos
@@ -126,7 +126,7 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-4 col-sm-6 ">
+            <div class="col-lg-4 col-sm-6 nvl">
                 <!-- Imagen -->
                 <img src="./img/preescolar.jpg" class="card-img-top" alt="Niños preescolares jugando">
                 <!-- Imagen -->
@@ -137,7 +137,7 @@
             <!-- Grid column -->
 
             <!-- Grid column -->
-            <div class="col-lg-4 col-sm-6 ">
+            <div class="col-lg-4 col-sm-6 nvl">
                 <!-- Imagen -->
                 <img src="./img/primaria.jpg" class="card-img-top" alt="Niña sentana en aula">
                 <!-- Imagen -->
@@ -154,7 +154,7 @@
             <div class="row text-center justify-content-center education" data-aos="fade-left">
                 
                 <!-- Grid column -->
-                <div class="col-12 pt-4 ">
+                <div class="col-12 pt-4 aprendiendo">
                     <!-- Texto -->
                     <h2>
                         Aprendiendo al maximo
@@ -164,19 +164,19 @@
                 <!-- Grid column -->
     
                 <!-- Grid column -->
-                <div class="col-12  col-md-4 m-2 m-md-0 ">
+                <div class="col-12  col-md-4 m-2 m-md-0 nvl">
                     <!-- Tarjeta -->
-                    <div class="card border-white">
+                    <div class="card border-white aprendiendoCard">
                         <!-- Texto -->
                         <h3 class="cardHeader">
-                                Arte
+                            Arte
                         </h3>
                         <!-- Texto -->
                         <!-- Imagen -->
                         <img src="./img/artes.jpg"  class="card-img" alt="Niña pintando pieza de fieltro">
                         <!-- Imagen -->
                         <!-- Texto -->
-                        <p class="card-text fs-5 pb-3">
+                        <p class="card-text fs-5 ">
                             Se ofrecen diversos talleres en donde los estudiantes pueden sacar todo su potencial.
                         </p>
                         <!-- Texto -->
@@ -186,9 +186,9 @@
                 <!-- Grid column -->
 
                 <!-- Grid column --> 
-                <div class="col-12 col-md-4 m-2 m-md-0">
+                <div class="col-12 col-md-4 m-2 m-md-0 nvl">
                     <!-- Tarjeta -->
-                    <div class="card border-white">
+                    <div class="card border-white cardP">
                         <!-- Texto -->
                         <h3 class="cardHeader">
                             Escuela bilingüe
@@ -208,7 +208,7 @@
                 <!-- Grid column -->
 
                 <!-- Grid column -->
-                <div class="col-12 col-md-4 m-2 m-md-0">
+                <div class="col-12 col-md-4 m-2 m-md-0 nvl">
                     <!-- Tarjeta -->
                     <div class="card border-white">
                         <!-- Texto -->
@@ -265,55 +265,55 @@
         <!-- section  -->
         <section>
             <!-- Grid row -->
-        <div class=" f-info row">
-            <!-- Grid column -->
-            <div class="f-content col-12 col-lg-4">
-                <!-- Enlace-->
-                <a class="text-decoration-none pt-4 d-flex" href="index.html">  
-                    <!-- Logo -->
-                    <img src="./img/logo.png" alt="logo de la escuela" width="40" height="40" class="logo rounded-circle  "  >
-                    <!-- Logo -->
-                    <!-- Titulo -->    
-                    <p class="fs-3 ps-2  fw-bold text-dark titulo">COLEGIO VS</p>
-                    <!-- Titulo --> 
-                </a>
-                <!-- Enlace-->
-            </div>  
-            <!-- Grid column -->
+            <div class="row">
+                <!-- Grid column -->
+                <div class="col-12 col-lg-4 nvl">
+                    <!-- Enlace-->
+                    <a class=" fTittle text-decoration-none pt-4 d-flex" href="index.html">  
+                        <!-- Logo -->
+                        <img src="./img/logo.png" alt="logo de la escuela" width="40" height="40" class="fLogo rounded-circle"  >
+                        <!-- Logo -->
+                        <!-- Titulo -->    
+                        <p class="fs-3 ps-2  fw-bold text-dark fTitulo">COLEGIO VS</p>
+                        <!-- Titulo --> 
+                    </a>
+                    <!-- Enlace-->
+                </div>  
+                <!-- Grid column -->
 
-            <!-- Grid column -->
-            <div class="align-self-center text-center pt-2 f-content col-12 col-lg-4 ">
-                <!-- Leyenda -->
-                <h4 class="leyenda">Nuestra mision es que nuestros estudiantes obtengan una educacion completa.</h4>
-                <!-- Leyenda -->
+                <!-- Grid column -->
+                <div class="align-self-center text-center pt-2 fContent col-12 col-lg-4 nvl">
+                    <!-- Leyenda -->
+                    <h4 class="leyenda">Nuestra mision es que nuestros estudiantes obtengan una educacion completa.</h4>
+                    <!-- Leyenda -->
+                </div>
+                <!-- Grid column -->
+                
+
+                <!-- Grid column -->
+                <div class="fContent mAp col-12 col-lg-4 pt-2 pb-1 nvl">       
+                    <!-- Ubicacion -->
+                    <iframe class="map d-flex " width="100%" height="100"
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241599.71168187525!2d47.347704353481895!3d-18.887281034181697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07de34f1f4eb3%3A0xdf110608bcc082f9!2sAntananarivo%2C%20Madagascar!5e0!3m2!1ses!2smx!4v1686959399820!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy">
+                    </iframe>
+                    <!-- Ubicacion -->
+                </div> 
+                <!-- Grid column -->
+
+                <!-- Elementos de footer -->
             </div>
-            <!-- Grid column -->
-            
-
-            <!-- Grid column -->
-            <div class="f-content col-12 col-lg-4 pt-2 pb-1">       
-                <!-- Ubicacion -->
-                <iframe class="map d-flex " width="100%" height="100"
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241599.71168187525!2d47.347704353481895!3d-18.887281034181697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x21f07de34f1f4eb3%3A0xdf110608bcc082f9!2sAntananarivo%2C%20Madagascar!5e0!3m2!1ses!2smx!4v1686959399820!5m2!1ses!2smx" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
-                <!-- Ubicacion -->
-            </div> 
-            <!-- Grid column -->
-
-            <!-- Elementos de footer -->
-        </div>
         </section>
         <!-- section  -->
     </main>
     <!-- Main -->
 
     <!-- Footer -->
-    <footer class="container-fluid  "> 
+    <footer class="container-fluid"> 
         <!-- Elementos de footer -->
         <!-- Grid row-->
         <div class="row ">
             <!-- Copyright -->
-            <div class=" col-sm-6 fCopyright text-center">© 2023 Copyright:
+            <div class=" col-sm-6 fCopyright fInfo text-center">© 2023 Copyright:
                 <!-- Enlace-->
                 <a class="text-decoration-none text-white " href="index.html">COLEGIO VS</a>
                 <!-- Enlace-->
@@ -321,7 +321,7 @@
             <!-- Copyright -->
 
             <!-- Grid column -->
-            <div class="icons  col-sm-6  justify-content-center d-flex">
+            <div class="icons fInfo col-sm-6  justify-content-center d-flex">
                 <!-- Enlace-->
                 <a class="icon " href="https://www.facebook.com/">
                     <!-- Facebook icon -->
