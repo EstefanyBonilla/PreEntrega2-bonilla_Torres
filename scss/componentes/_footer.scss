@@ -1,0 +1,30 @@
+footer{
+    background-color: $clr-1;
+    div{
+        @extend %fCopyright;
+        @media (min-width: 576px){
+            .fInfo {
+              flex: 0 0 auto;
+              width: 50%;
+            }
+        }
+            a.colegioVS{
+                color: $clr-3;
+                text-decoration: none;
+            }
+    }
+    div.icons{
+        justify-content: $cr;
+        display: flex;
+        @media (min-width: 576px){
+            .fInfo {
+              flex: 0 0 auto;
+              width: 50%;
+            }
+        }
+            a.icon{
+                color: $clr-3;
+                padding: 0 20px;
+            }
+    }
+}

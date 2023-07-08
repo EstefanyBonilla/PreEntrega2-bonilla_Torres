@@ -37,15 +37,15 @@ section button.btn a.btnAll {
   text-align: center;
   border: none;
   color: #ffffff;
-  background-color: #82BDFF;
+  background-color: #184e8d;
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  background-image: linear-gradient(to bottom, #82BDFF, #050536);
-  background-image: -webkit-linear-gradient(top, #82BDFF, #050536);
-  background-image: -moz-linear-gradient(top, #82BDFF, #050536);
-  background-image: -ms-linear-gradient(top, #82BDFF, #050536);
-  background-image: -o-linear-gradient(top, #82BDFF, #050536);
+  background-image: linear-gradient(to bottom, #184e8d, #050536);
+  background-image: -webkit-linear-gradient(top, #184e8d, #050536);
+  background-image: -moz-linear-gradient(top, #184e8d, #050536);
+  background-image: -ms-linear-gradient(top, #184e8d, #050536);
+  background-image: -o-linear-gradient(top, #184e8d, #050536);
 }
 section button.btn a.btnAll:hover {
   display: block;
@@ -62,16 +62,11 @@ section button.btn a.btnAll:hover {
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  background-image: linear-gradient(to bottom, #050536, #82BDFF);
-  background-image: -webkit-linear-gradient(top, #050536, #82BDFF);
-  background-image: -moz-linear-gradient(top, #050536, #82BDFF);
-  background-image: -ms-linear-gradient(top, #050536, #82BDFF);
-  background-image: -o-linear-gradient(top, #050536, #82BDFF);
-}
-
-header div.portada p.subText {
-  font-size: 18px;
-  margin-bottom: 0;
+  background-image: linear-gradient(to bottom, #050536, #184e8d);
+  background-image: -webkit-linear-gradient(top, #050536, #184e8d);
+  background-image: -moz-linear-gradient(top, #050536, #184e8d);
+  background-image: -ms-linear-gradient(top, #050536, #184e8d);
+  background-image: -o-linear-gradient(top, #050536, #184e8d);
 }
 
 section div.nvl a.fTittle {
@@ -92,6 +87,13 @@ section div.mAp, section div.fContent {
   padding-top: 0.5rem;
 }
 
+footer div {
+  justify-content: center;
+  padding-top: 20;
+  color: #ffffff;
+  text-align: center;
+}
+
 header {
   height: 100%;
 }
@@ -107,10 +109,10 @@ header nav.navbar a.navbar-brand img.logo {
 }
 header nav.navbar a.navbar-brand .titulo {
   padding-left: 8px;
+  padding-top: 7px;
   padding-bottom: 0;
   margin-bottom: 0;
   color: #050536;
-  padding-top: 7px;
 }
 header nav.navbar a.navbar-brand .titulo:hover {
   color: #060869;
@@ -205,14 +207,27 @@ header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
 }
 header div.portada {
   padding: 0.25rem;
+  text-align: center;
+  background-color: #050536;
 }
 header div.portada h3.subtitulo {
-  text-align: center;
   color: #ffffff;
   font-size: 32px;
   font-weight: 500;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  header div.portada h3.subtitulo .subtitulo {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+}
+header div.portada p.subText {
+  font-size: 19px;
+  margin-bottom: 0;
+  color: #ffffff;
+}
+
 section div.info {
   display: flex;
   flex-wrap: wrap;
@@ -326,6 +341,34 @@ section div.fContent h4.leyenda {
 }
 section div.mAp {
   padding-bottom: 0.25rem;
+}
+
+footer {
+  background-color: #050536;
+}
+@media (min-width: 576px) {
+  footer div .fInfo {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+footer div a.colegioVS {
+  color: #ffffff;
+  text-decoration: none;
+}
+footer div.icons {
+  justify-content: center;
+  display: flex;
+}
+@media (min-width: 576px) {
+  footer div.icons .fInfo {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+footer div.icons a.icon {
+  color: #ffffff;
+  padding: 0 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

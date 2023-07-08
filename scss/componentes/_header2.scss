@@ -9,11 +9,11 @@ header{
                 border-radius: 50%;
             }
             .titulo{
-                padding-left: map-get($map: $titulo, $key: p-l);
-                padding-bottom:  map-get($map: $titulo, $key: p-b);
-                margin-bottom:  map-get($map: $titulo, $key: m-b);
-                color:  map-get($map: $titulo, $key: clr);
-                padding-top:  map-get($map: $titulo, $key: p-t); 
+                padding-left: map-get( $titulo, p-l);
+                padding-bottom:  map-get( $titulo, p-b);
+                margin-bottom:  map-get($titulo,  m-b);
+                color:  map-get($titulo, clr);
+                padding-top:  map-get($titulo, p-t); 
                 &:hover {
                     color: $clr-5;
                 }
@@ -38,17 +38,24 @@ header{
     }
     div.portada{
         padding: 0.25rem;
+        text-align: $cr;
+        background-color: $clr-1;
         h3.subtitulo{
-            text-align: map-get($map: $stitulo, $key: t-a);
-            background: map-get($map: $stitulo, $key: b-g);
-            color: map-get($map: $stitulo, $key: clr);
-            font-size: map-get($map: $stitulo, $key: f-s);
-            font-weight: map-get($map: $stitulo, $key: f-);
-            margin-bottom: map-get($map: $stitulo, $key: m-b);
+            color: map-get($stitulo, clr);
+            font-size: map-get($stitulo, f-s);
+            font-weight: map-get($stitulo, f-);
+            margin-bottom: map-get($stitulo, m-b);
+            @media (max-width: 768px) {
+                .subtitulo {
+                font-size: 24px;
+                margin-bottom: 0;
+                }
+            }
         }
         p.subText{
-            @extend %subText
+            font-size: 19px;
+            margin-bottom:0;
+            color: $clr-3;
         }
-        
     }
 }

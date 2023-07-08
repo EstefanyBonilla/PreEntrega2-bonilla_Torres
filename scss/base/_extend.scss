@@ -66,13 +66,7 @@
         background-image: -moz-linear-gradient(top, $clr-1, $clr-4);
         background-image: -ms-linear-gradient(top, $clr-1, $clr-4);
         background-image: -o-linear-gradient(top, $clr-1, $clr-4);
-        
     }
-}
-
-%subText{
-    font-size: 18px;
-    margin-bottom:0;
 }
 
 %fTittle{
@@ -104,19 +98,4 @@
     padding-top: 20;
     color: $clr-3;
     text-align: $cr;
-}
-
-%colegioVS{
-    color: $clr-3;
-    text-decoration: none; 
-}
-
-%icons{
-    justify-content: $cr;
-    display: flex;
-}
-
-%icon{
-    color: $clr-3;
-    padding: 0 20px;
 }
