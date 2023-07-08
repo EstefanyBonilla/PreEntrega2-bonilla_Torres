@@ -1,7 +1,5 @@
-%img{
-    vertical-align: middle;
-    overflow-clip-margin: content-box;
-    overflow: clip;        
+%section{
+    padding: 40px 0;
 }
 
 %nvl{
@@ -21,18 +19,54 @@
     }
 }
 
-%section{
-    padding: 40px 0;
+%img{
+    vertical-align: middle;
+    overflow-clip-margin: content-box;
+    overflow: clip;        
 }
 
 %btnAll{
+    animation: shakeX 25s ease;
+    display: $d-b;
+    width: 200px;
+    height: 45px;
+    padding: 7px;
+    margin: 10px auto;
+    font-size: $p-fs;
+    font-weight: $f-w;
+    text-align: $cr;
+    border: none;
     color: $clr-3;
     background-color: $clr-4;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
     background-image: linear-gradient(to bottom, $clr-4, $clr-1);
+    background-image: -webkit-linear-gradient(top, $clr-4, $clr-1);
+    background-image: -moz-linear-gradient(top, $clr-4, $clr-1);
+    background-image: -ms-linear-gradient(top, $clr-4, $clr-1);
+    background-image: -o-linear-gradient(top, $clr-4, $clr-1);
     &:hover {
+        display: $d-b;
+        width: 225px;
+        height: 45px;
+        padding: 7px;
+        margin: 10px auto;
+        font-size: $p-fs;
+        font-weight: $f-w;
+        text-align: $cr;
+        border: none;
         color: $clr-3;
         background-color: $clr-1;
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
         background-image: linear-gradient(to bottom, $clr-1, $clr-4);
+        background-image: -webkit-linear-gradient(top, $clr-1, $clr-4);
+        background-image: -moz-linear-gradient(top, $clr-1, $clr-4);
+        background-image: -ms-linear-gradient(top, $clr-1, $clr-4);
+        background-image: -o-linear-gradient(top, $clr-1, $clr-4);
+        
     }
 }
 
@@ -60,20 +94,16 @@
 }
 
 %fContent{
-    align-self: center;
-    text-align: center;
+    align-self: $cr;
+    text-align: $cr;
     padding-top: 0.5rem;
 }
 
-%mAp{
-    padding-bottom: 0.25rem;
-}
-
 %fCopyright{
-    justify-content: center;
+    justify-content: $cr;
     padding-top: 20;
     color: $clr-3;
-    text-align: center;
+    text-align: $cr;
 }
 
 %colegioVS{
@@ -82,7 +112,7 @@
 }
 
 %icons{
-    justify-content: center;
+    justify-content: $cr;
     display: flex;
 }
 

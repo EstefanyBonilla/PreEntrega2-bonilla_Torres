@@ -1,0 +1,161 @@
+section{
+    @extend %section;
+    div.info{
+        display: flex;
+        flex-wrap: wrap;
+        transition-duration: 1s;
+        @media (min-width: 992px){
+            .info {
+            margin: 1.5rem;
+            }
+        }
+        div.divImgPresentacion{
+            opacity: 1;
+            transform: none;
+            transition-delay: .1s;
+            @media (min-width: 992px){
+                .divImgPresentacion {
+                order: 2!important;
+                width: 50%;
+                flex: 0 0 auto;
+                }
+            }
+            @media (max-width: 991px) {
+                .divImgPresentacion {
+                order: 1!important;
+                width: 100%;
+                opacity: 1;
+                transform: none;
+                transition-delay: 0.1s;
+                }   
+            }
+            img.cuerpoHumano{
+                vertical-align: middle;
+                width: 100%;
+                height: auto;
+            }
+        }
+        div.divContenido{
+            text-align: $cr;
+            @media (min-width: 992px){
+                .divContenido {
+                order: 1!important;
+                width: 50%;
+                flex: 0 0 auto;
+                justify-content: $cr;   
+                }
+            }
+            @media (max-width: 991px) {
+                .divContenido{
+                order: 2!important;
+                width: 100%;
+                opacity: 1;
+                transform: none;
+                transition-delay: 0.1s;
+                }
+            }
+        }
+    }
+}
+
+section {
+    @extend %section;
+    div.secNiveles{
+        text-align: $cr!important;
+        div.nvlEducativo{
+            justify-content: $cr;
+            border-color: $clr-3;
+            margin-bottom: 8px;
+            h2{
+                font-weight: bold;
+            }
+        }
+        div.nvl{
+            @extend %nvl;
+            @extend %img;
+            h4{
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+section{
+    @extend %section;
+    div.education{
+        text-align: $cr;
+        justify-content: $cr;
+        div.aprendiendo{
+            background-color: $clr-3;
+            border: none;
+            h2{
+                font-weight:bold;
+            }
+        }
+        div.nvl{
+            @extend %nvl;
+            div.aprendiendoCard{
+                border-color: $clr-3;
+                h3.cardHeader{
+                    background-color: $clr-3;
+                    margin-bottom: 8px;
+                }
+                img.card-img{
+                    @extend %img;
+                }
+                p.card-text{
+                    font-size: $p-fs;
+                }
+            }
+        }
+    }
+}
+
+section{
+    @extend %section;
+    div.invitacion{
+        text-align: $cr;
+        h2{
+            font-weight: bold;
+        }
+    }  
+    button.btn{
+        justify-content: $cr;
+        width: $w;
+        a.btnAll{
+            @extend %btnAll
+        } 
+    }
+}
+
+section{
+    @extend %section;
+    div.nvl{
+        @extend %nvl;
+        a.fTittle{
+            @extend %fTittle;
+            img.fLogo{
+                width: 40!important;
+                border-radius: 50%;
+            }
+            p.fTitulo{
+                @extend %fTitulo
+            }
+        }
+    }
+    div.fContent{
+        @extend %nvl;
+        @extend %fContent;
+        h4.leyenda{
+            text-align: $cr;
+        }
+    }
+    div.mAp{
+        @extend %nvl;
+        @extend %fContent;
+        padding-bottom: 0.25rem;
+    }
+}
+
+
+

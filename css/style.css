@@ -1,18 +1,331 @@
-/* Error: Expected digit.
- *   ,
- * 6 | .btnAll{
- *   |  ^
- *   '
- *   scss\base\_colors.scss 6:2  @import
- *   scss\style.scss 5:9         root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Expected digit.\a   \2577 \a 6 \2502  .btnAll{\d\a   \2502   ^\a   \2575 \a   scss\\base\\_colors.scss 6:2  @import\a   scss\\style.scss 5:9         root stylesheet";
+section {
+  padding: 40px 0;
 }
+
+section div.mAp, section div.fContent, section div.nvl, section div.education div.nvl, section div.secNiveles div.nvl {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+@media (min-width: 992px) {
+  section div.mAp .nvl, section div.fContent .nvl, section div.nvl .nvl, section div.education div.nvl .nvl, section div.secNiveles div.nvl .nvl {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+@media (min-width: 576px) {
+  section div.mAp .nvl, section div.fContent .nvl, section div.nvl .nvl, section div.education div.nvl .nvl, section div.secNiveles div.nvl .nvl {
+    flex: 0 0 auto;
+    width: 33.33333333%;
+  }
+}
+
+section div.education div.nvl div.aprendiendoCard img.card-img, section div.secNiveles div.nvl {
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+
+section button.btn a.btnAll {
+  animation: shakeX 25s ease;
+  display: block;
+  width: 200px;
+  height: 45px;
+  padding: 7px;
+  margin: 10px auto;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  background-color: #82BDFF;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #82BDFF, #050536);
+  background-image: -webkit-linear-gradient(top, #82BDFF, #050536);
+  background-image: -moz-linear-gradient(top, #82BDFF, #050536);
+  background-image: -ms-linear-gradient(top, #82BDFF, #050536);
+  background-image: -o-linear-gradient(top, #82BDFF, #050536);
+}
+section button.btn a.btnAll:hover {
+  display: block;
+  width: 225px;
+  height: 45px;
+  padding: 7px;
+  margin: 10px auto;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  color: #ffffff;
+  background-color: #050536;
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  background-image: linear-gradient(to bottom, #050536, #82BDFF);
+  background-image: -webkit-linear-gradient(top, #050536, #82BDFF);
+  background-image: -moz-linear-gradient(top, #050536, #82BDFF);
+  background-image: -ms-linear-gradient(top, #050536, #82BDFF);
+  background-image: -o-linear-gradient(top, #050536, #82BDFF);
+}
+
+header div.portada p.subText {
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+section div.nvl a.fTittle {
+  text-decoration: none;
+  padding-top: 1.5rem;
+  display: flex;
+  color: #050536;
+}
+
+section div.nvl a.fTittle p.fTitulo {
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+
+section div.mAp, section div.fContent {
+  align-self: center;
+  text-align: center;
+  padding-top: 0.5rem;
+}
+
+header {
+  height: 100%;
+}
+header nav.navbar {
+  padding: 0;
+}
+header nav.navbar a.navbar-brand {
+  display: flex;
+  padding-top: 0.25rem;
+}
+header nav.navbar a.navbar-brand img.logo {
+  border-radius: 50%;
+}
+header nav.navbar a.navbar-brand .titulo {
+  padding-left: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #050536;
+  padding-top: 7px;
+}
+header nav.navbar a.navbar-brand .titulo:hover {
+  color: #060869;
+}
+header nav.navbar button.navbar-toggler {
+  background-color: #ffffff;
+}
+header nav.navbar div.offcanvas {
+  width: auto;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada {
+  font-weight: bold;
+  justify-content: end;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link {
+  color: #050536;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
+  color: #ebb609;
+}
+header #inicio {
+  width: 100%;
+  height: 80vh;
+  background: url("../img/1c.jpg") top center;
+  background-size: cover;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+header #inicio::before {
+  background: rgba(0, 0, 0, 0.26);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+header #inicio div.animacionAos {
+  position: relative;
+  color: #ffffff;
+}
+@media (max-width: 768px) {
+  header #inicio div.animacionAos [data-aos-delay] {
+    transition-delay: 0 !important;
+  }
+}
+header #inicio div.animacionAos h1.animacinH1 {
+  margin: 0;
+  font-weight: 500;
+  text-align: center;
+}
+
+header {
+  height: 100%;
+}
+header nav.navbar {
+  padding: 0;
+}
+header nav.navbar a.navbar-brand {
+  display: flex;
+  padding-top: 0.25rem;
+}
+header nav.navbar a.navbar-brand img.logo {
+  border-radius: 50%;
+}
+header nav.navbar a.navbar-brand .titulo {
+  padding-left: 8px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  color: #050536;
+  padding-top: 7px;
+}
+header nav.navbar a.navbar-brand .titulo:hover {
+  color: #060869;
+}
+header nav.navbar button.navbar-toggler {
+  background-color: #ffffff;
+}
+header nav.navbar div.offcanvas {
+  width: auto;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada {
+  font-weight: bold;
+  justify-content: end;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link {
+  color: #050536;
+}
+header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
+  color: #ebb609;
+}
+header div.portada {
+  padding: 0.25rem;
+}
+header div.portada h3.subtitulo {
+  text-align: center;
+  color: #ffffff;
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+section div.info {
+  display: flex;
+  flex-wrap: wrap;
+  transition-duration: 1s;
+}
+@media (min-width: 992px) {
+  section div.info .info {
+    margin: 1.5rem;
+  }
+}
+section div.info div.divImgPresentacion {
+  opacity: 1;
+  transform: none;
+  transition-delay: 0.1s;
+}
+@media (min-width: 992px) {
+  section div.info div.divImgPresentacion .divImgPresentacion {
+    order: 2 !important;
+    width: 50%;
+    flex: 0 0 auto;
+  }
+}
+@media (max-width: 991px) {
+  section div.info div.divImgPresentacion .divImgPresentacion {
+    order: 1 !important;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.1s;
+  }
+}
+section div.info div.divImgPresentacion img.cuerpoHumano {
+  vertical-align: middle;
+  width: 100%;
+  height: auto;
+}
+section div.info div.divContenido {
+  text-align: center;
+}
+@media (min-width: 992px) {
+  section div.info div.divContenido .divContenido {
+    order: 1 !important;
+    width: 50%;
+    flex: 0 0 auto;
+    justify-content: center;
+  }
+}
+@media (max-width: 991px) {
+  section div.info div.divContenido .divContenido {
+    order: 2 !important;
+    width: 100%;
+    opacity: 1;
+    transform: none;
+    transition-delay: 0.1s;
+  }
+}
+
+section div.secNiveles {
+  text-align: center !important;
+}
+section div.secNiveles div.nvlEducativo {
+  justify-content: center;
+  border-color: #ffffff;
+  margin-bottom: 8px;
+}
+section div.secNiveles div.nvlEducativo h2 {
+  font-weight: bold;
+}
+section div.secNiveles div.nvl h4 {
+  margin-bottom: 8px;
+}
+
+section div.education {
+  text-align: center;
+  justify-content: center;
+}
+section div.education div.aprendiendo {
+  background-color: #ffffff;
+  border: none;
+}
+section div.education div.aprendiendo h2 {
+  font-weight: bold;
+}
+section div.education div.nvl div.aprendiendoCard {
+  border-color: #ffffff;
+}
+section div.education div.nvl div.aprendiendoCard h3.cardHeader {
+  background-color: #ffffff;
+  margin-bottom: 8px;
+}
+section div.education div.nvl div.aprendiendoCard p.card-text {
+  font-size: 19px;
+}
+
+section div.invitacion {
+  text-align: center;
+}
+section div.invitacion h2 {
+  font-weight: bold;
+}
+section button.btn {
+  justify-content: center;
+  width: 100%;
+}
+section div.nvl a.fTittle img.fLogo {
+  width: 40 !important;
+  border-radius: 50%;
+}
+section div.fContent h4.leyenda {
+  text-align: center;
+}
+section div.mAp {
+  padding-bottom: 0.25rem;
+}
+
+/*# sourceMappingURL=style.css.map */

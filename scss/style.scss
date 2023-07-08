@@ -1,8 +1,9 @@
  @import './base/vars';
+ @import'./base/colors';
  @import './base/maps';
  @import './base/extend';
  @import'./base/mixin';
- @import'./base/colors';
+ 
 
 //  Primero se importan los archivos de base para que se lean primero y poder llamarlos en layout
 
