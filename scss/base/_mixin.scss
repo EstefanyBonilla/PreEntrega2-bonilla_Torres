@@ -1,0 +1,4 @@
+@mixin cartasValores($bg-clr, $max-w){
+    background-color: $bg-clr;
+    max-width: $max-w;
+}

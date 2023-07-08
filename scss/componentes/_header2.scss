@@ -36,36 +36,19 @@ header{
             }
         }
     }
-    #inicio{
-        width: $w;
-        height: 80vh;
-        background: url("../img/1c.jpg") top center;
-        background-size: cover;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        &::before{
-            background: rgba(0, 0, 0, 0.26);
-            position: absolute;
-            bottom: 0;
-            top: 0;
-            left: 0;
-            right: 0;
+    div.portada{
+        padding: 0.25rem;
+        h3.subtitulo{
+            text-align: map-get($map: $stitulo, $key: t-a);
+            background: map-get($map: $stitulo, $key: b-g);
+            color: map-get($map: $stitulo, $key: clr);
+            font-size: map-get($map: $stitulo, $key: f-s);
+            font-weight: map-get($map: $stitulo, $key: f-);
+            margin-bottom: map-get($map: $stitulo, $key: m-b);
         }
-        div.animacionAos{
-            position: relative;
-            @media (max-width: 768px) {
-                [data-aos-delay] {
-                    transition-delay: 0 !important;
-                }
-            }
-            h1.animacinH1{
-                margin: 0;
-                font-weight: 500;
-                color: $clr-3;
-                text-align: center;
-            }
+        p.subText{
+            @extend %subText
         }
+        
     }
 }
