@@ -1,5 +1,11 @@
 %section{
-    padding: 40px 0;
+    padding: 30px 0;  
+}
+
+%hr{
+    color: $clr-2;
+    opacity: initial;
+    border-top-width: 2px;
 }
 
 %nvl{
@@ -31,7 +37,7 @@
     width: 200px;
     height: 45px;
     padding: 7px;
-    margin: 10px auto;
+    margin: 0px auto;
     font-size: $p-fs;
     font-weight: $f-w;
     text-align: $cr;
@@ -71,7 +77,7 @@
 
 %fTittle{
     text-decoration: none;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     display: flex;
     color: $clr-1;
 }
@@ -81,16 +87,10 @@
     font-weight: $f-w;
 }
 
-%footer{
-    background-color: $clr-1;
-    height: 75px;
-    padding: 20px 0;
-}
-
 %fContent{
     align-self: $cr;
     text-align: $cr;
-    padding-top: 0.5rem;
+    
 }
 
 %fCopyright{

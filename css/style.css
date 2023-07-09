@@ -1,37 +1,43 @@
 section {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
-section div.mAp, section div.fContent, section div.nvl, section div.education div.nvl, section div.secNiveles div.nvl {
+article hr.linea {
+  color: #ebb609;
+  opacity: initial;
+  border-top-width: 2px;
+}
+
+section div.personal, section div.secNiveles div.nvl, section div.education div.nvl, article div.mAp, article div.fContent, article div.nvl {
   padding-left: 12px;
   padding-right: 12px;
 }
 @media (min-width: 992px) {
-  section div.mAp .nvl, section div.fContent .nvl, section div.nvl .nvl, section div.education div.nvl .nvl, section div.secNiveles div.nvl .nvl {
+  section div.personal .nvl, section div.secNiveles div.nvl .nvl, section div.education div.nvl .nvl, article div.mAp .nvl, article div.fContent .nvl, article div.nvl .nvl {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
 }
 @media (min-width: 576px) {
-  section div.mAp .nvl, section div.fContent .nvl, section div.nvl .nvl, section div.education div.nvl .nvl, section div.secNiveles div.nvl .nvl {
+  section div.personal .nvl, section div.secNiveles div.nvl .nvl, section div.education div.nvl .nvl, article div.mAp .nvl, article div.fContent .nvl, article div.nvl .nvl {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
 }
 
-section div.education div.nvl div.aprendiendoCard img.card-img, section div.secNiveles div.nvl {
+section div.personal img.imgC, section div.secNiveles div.nvl, section div.education div.nvl div.aprendiendoCard img.card-img {
   vertical-align: middle;
   overflow-clip-margin: content-box;
   overflow: clip;
 }
 
-section button.btn a.btnAll {
+section button.btn a.btnAll, section div.formaContacto div.fCol form.cFor div.boton button.btnAll, section div.formaContacto div.area form.cForm div.boton button.btnAll {
   animation: shakeX 25s ease;
   display: block;
   width: 200px;
   height: 45px;
   padding: 7px;
-  margin: 10px auto;
+  margin: 0px auto;
   font-size: 19px;
   font-weight: bold;
   text-align: center;
@@ -47,7 +53,7 @@ section button.btn a.btnAll {
   background-image: -ms-linear-gradient(top, #184e8d, #050536);
   background-image: -o-linear-gradient(top, #184e8d, #050536);
 }
-section button.btn a.btnAll:hover {
+section button.btn a.btnAll:hover, section div.formaContacto div.fCol form.cFor div.boton button.btnAll:hover, section div.formaContacto div.area form.cForm div.boton button.btnAll:hover {
   display: block;
   width: 225px;
   height: 45px;
@@ -69,22 +75,21 @@ section button.btn a.btnAll:hover {
   background-image: -o-linear-gradient(top, #050536, #184e8d);
 }
 
-section div.nvl a.fTittle {
+article div.nvl a.fTittle {
   text-decoration: none;
-  padding-top: 1.5rem;
+  padding-top: 2rem;
   display: flex;
   color: #050536;
 }
 
-section div.nvl a.fTittle p.fTitulo {
+article div.nvl a.fTittle p.fTitulo {
   padding-left: 0.5rem;
   font-weight: bold;
 }
 
-section div.mAp, section div.fContent {
+article div.mAp, article div.fContent {
   align-self: center;
   text-align: center;
-  padding-top: 0.5rem;
 }
 
 footer div {
@@ -94,43 +99,58 @@ footer div {
   text-align: center;
 }
 
+article div.nvl a.fTittle {
+  justify-content: center !important;
+}
+article div.nvl a.fTittle img.fLogo {
+  width: 40 !important;
+  border-radius: 50%;
+}
+article div.fContent h4.leyenda {
+  text-align: center;
+}
+article div.mAp {
+  padding-bottom: 0.25rem;
+}
+
 header {
   height: 100%;
 }
 header nav.navbar {
   padding: 0;
 }
-header nav.navbar a.navbar-brand {
+header nav.navbar div.container-fluid a.navbar-brand {
   display: flex;
   padding-top: 0.25rem;
 }
-header nav.navbar a.navbar-brand img.logo {
+header nav.navbar div.container-fluid a.navbar-brand img.logo {
   border-radius: 50%;
 }
-header nav.navbar a.navbar-brand .titulo {
-  padding-left: 8px;
-  padding-top: 7px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  color: #050536;
+header nav.navbar div.container-fluid a.navbar-brand h1.titulo {
+  padding-left: 8px !important;
+  padding-top: 4px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  color: #050536 !important;
+  font-weight: bold !important;
 }
-header nav.navbar a.navbar-brand .titulo:hover {
-  color: #060869;
+header nav.navbar div.container-fluid a.navbar-brand h1.titulo:hover {
+  color: #184e8d !important;
 }
-header nav.navbar button.navbar-toggler {
+header nav.navbar div.container-fluid button.navbar-toggler {
   background-color: #ffffff;
 }
-header nav.navbar div.offcanvas {
+header nav.navbar div.container-fluid div.offcanvas {
   width: auto;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada {
   font-weight: bold;
   justify-content: end;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link {
   color: #050536;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
   color: #ebb609;
 }
 header #inicio {
@@ -180,14 +200,14 @@ header nav.navbar a.navbar-brand img.logo {
   border-radius: 50%;
 }
 header nav.navbar a.navbar-brand .titulo {
-  padding-left: 8px;
-  padding-bottom: 0;
-  margin-bottom: 0;
-  color: #050536;
-  padding-top: 7px;
+  padding-left: 8px !important;
+  padding-bottom: 0 !important;
+  margin-bottom: 0 !important;
+  color: #050536 !important;
+  padding-top: 4px !important;
 }
 header nav.navbar a.navbar-brand .titulo:hover {
-  color: #060869;
+  color: #184e8d !important;
 }
 header nav.navbar button.navbar-toggler {
   background-color: #ffffff;
@@ -222,12 +242,114 @@ header div.portada h3.subtitulo {
     margin-bottom: 0;
   }
 }
-header div.portada p.subText {
-  font-size: 19px;
+header div.portada p.subTex {
+  font-size: 18px;
   margin-bottom: 0;
   color: #ffffff;
 }
 
+section {
+  display: block;
+}
+section div.formaContacto {
+  width: 100%;
+  height: 100%;
+}
+section div.formaContacto div.area {
+  flex-shrink: 1;
+}
+@media (min-width: 992px) {
+  section div.formaContacto div.area div.area {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+section div.formaContacto div.area form.cForm {
+  background-color: #ffffff;
+  height: 350px;
+}
+section div.formaContacto div.area form.cForm legend.formTitulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #050536;
+  font-weight: bold;
+  line-height: normal;
+}
+section div.formaContacto div.area form.cForm div.form-group {
+  margin-bottom: 15px;
+}
+section div.formaContacto div.area form.cForm div.form-group input.form-control {
+  background-color: #ffffff;
+  border-color: #a9a9ad;
+}
+section div.formaContacto div.area form.cForm div.boton {
+  justify-content: center;
+}
+section div.formaContacto div.area {
+  flex-shrink: 1;
+}
+@media (min-width: 992px) {
+  section div.formaContacto div.area .area {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+section div.formaContacto div.area img.imgF {
+  vertical-align: middle;
+  height: 100%;
+}
+
+section {
+  display: block;
+}
+section div.formaContacto {
+  width: 100%;
+  height: 100%;
+}
+section div.formaContacto div.fCol {
+  width: 60%;
+  background-color: #ebb609;
+  border-radius: 5%;
+  height: 420px;
+}
+@media screen and (max-width: 992px) {
+  section div.formaContacto div.fCol {
+    height: 470px;
+  }
+}
+section div.formaContacto div.fCol form.cFor {
+  background-color: #ebb609;
+  border-radius: 5%;
+}
+section div.formaContacto div.fCol form.cFor legend.formTitulo {
+  text-align: center;
+  font-size: 2rem;
+  color: #050536;
+  font-weight: bold;
+  line-height: normal;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  section div.formaContacto div.fCol form.cFor legend.formTitulo {
+    font-size: 1.5rem;
+  }
+}
+section div.formaContacto div.fCol form.cFor div.form-group {
+  padding-top: 15px;
+  margin-bottom: 15px;
+}
+section div.formaContacto div.fCol form.cFor div.form-group input.form-control {
+  background-color: #ffffff;
+  border-color: #a9a9ad;
+  margin-bottom: 15px;
+}
+section div.formaContacto div.fCol form.cFor div.boton {
+  justify-content: center;
+}
+section {
+  display: block;
+}
 section div.info {
   display: flex;
   flex-wrap: wrap;
@@ -243,14 +365,14 @@ section div.info div.divImgPresentacion {
   transform: none;
   transition-delay: 0.1s;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   section div.info div.divImgPresentacion .divImgPresentacion {
     order: 2 !important;
     width: 50%;
     flex: 0 0 auto;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   section div.info div.divImgPresentacion .divImgPresentacion {
     order: 1 !important;
     width: 100%;
@@ -259,15 +381,15 @@ section div.info div.divImgPresentacion {
     transition-delay: 0.1s;
   }
 }
-section div.info div.divImgPresentacion img.cuerpoHumano {
+section div.info div.divImgPresentacion img.imgAnimada {
   vertical-align: middle;
   width: 100%;
   height: auto;
 }
 section div.info div.divContenido {
-  text-align: center;
+  padding-top: 1rem !important;
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   section div.info div.divContenido .divContenido {
     order: 1 !important;
     width: 50%;
@@ -275,7 +397,7 @@ section div.info div.divContenido {
     justify-content: center;
   }
 }
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   section div.info div.divContenido .divContenido {
     order: 2 !important;
     width: 100%;
@@ -285,21 +407,63 @@ section div.info div.divContenido {
   }
 }
 
-section div.secNiveles {
-  text-align: center !important;
+section {
+  display: block;
 }
-section div.secNiveles div.nvlEducativo {
-  justify-content: center;
-  border-color: #ffffff;
-  margin-bottom: 8px;
+section div.invitacion {
+  text-align: center;
 }
-section div.secNiveles div.nvlEducativo h2 {
+section div.invitacion h4 {
+  margin-top: 3px;
+}
+section div.invitacion h2 {
   font-weight: bold;
 }
-section div.secNiveles div.nvl h4 {
-  margin-bottom: 8px;
+section button.btn {
+  justify-content: center;
+  width: 100%;
+}
+section {
+  width: 100%;
+}
+section div.textPhotos {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+@media (min-width: 576px) {
+  section div.filaImgs .filaImgs {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  section div.filaImgs .filaImgs {
+    flex: 0 0 auto;
+    width: 25%;
+  }
+}
+section div.filaImgs img.imgs1 {
+  margin-bottom: 1.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+section div.filaImgs img.imgs1:hover {
+  transform: rotateY(180deg);
+}
+section div.filaImgs img.imgs {
+  width: 100%;
+  border-radius: 0.5rem;
+  transition: all 0.4s ease-in-out;
+}
+section div.filaImgs img.imgs:hover {
+  transform: rotateY(180deg);
 }
 
+section {
+  display: block;
+}
 section div.education {
   text-align: center;
   justify-content: center;
@@ -322,28 +486,131 @@ section div.education div.nvl div.aprendiendoCard p.card-text {
   font-size: 19px;
 }
 
-section div.invitacion {
-  text-align: center;
+section {
+  display: block;
 }
-section div.invitacion h2 {
+section div.secNiveles {
+  text-align: center !important;
+}
+section div.secNiveles div.nvlEducativo {
+  justify-content: center;
+  border-color: #ffffff;
+  margin-bottom: 8px;
+}
+section div.secNiveles div.nvlEducativo h2 {
   font-weight: bold;
 }
-section button.btn {
+section div.secNiveles div.nvl h4 {
+  margin-bottom: 8px;
+}
+
+section {
+  display: block;
+}
+section div.valor {
   justify-content: center;
+}
+section div.valor div.valores {
+  text-align: center;
   width: 100%;
 }
-section div.nvl a.fTittle img.fLogo {
-  width: 40 !important;
-  border-radius: 50%;
+section div.valor div.valores h2 h2:before, section div.valor div.valores h2 h2::after {
+  content: "";
+  width: 50px;
+  height: 2px;
+  background: #ebb609;
+  display: inline-block;
 }
-section div.fContent h4.leyenda {
+section div.valor div.valores h2 h2:before {
+  margin: 0 15px 10px 0;
+}
+section div.valor div.valores h2 h2::after {
+  margin: 0 15px 10px 0;
+}
+section div.valor div.cartaAmarilla {
+  margin: 0.25rem !important;
+  max-width: 15rem;
+  background-color: #ebb609;
+  color: #050536;
+}
+section div.valor div.cartaAmarilla div.card-header {
+  font-weight: bold;
+}
+section div.valor div.cartaOscura {
+  margin: 0.25rem !important;
+  max-width: 15rem;
+  background-color: #050536;
+  color: #ffffff;
+}
+section div.valor div.cartaOscura div.card-header {
+  font-weight: bold;
+}
+
+section {
+  display: block;
+}
+section div.colaborador {
+  text-align: center;
+  width: 100%;
+}
+section div.colaborador h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+section div.personal {
   text-align: center;
 }
-section div.mAp {
-  padding-bottom: 0.25rem;
+section {
+  display: block;
+}
+section div.niveles {
+  display: flex;
+  align-items: stretch;
+}
+section div.niveles div.card {
+  border: 0;
+  padding: 0 30px;
+  position: relative;
+}
+section div.niveles div.card div.card-img {
+  width: calc(100% + 60px);
+  margin-left: -30px;
+  overflow: hidden;
+  z-index: 9;
+  border-radius: 0;
+}
+section div.niveles div.card div.card-img img.imgNiveles {
+  max-width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+section div.niveles div.card div.card-img img.imgNiveles:hover {
+  transform: scale(1.1);
+}
+section div.niveles div.card div.card-body {
+  z-index: 10;
+  background: #ffffff;
+  border-top: 4px solid #ffffff;
+  padding: 30px;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  margin-top: -60px;
+  transition: 0.3s;
+}
+section div.niveles div.card div.card-body:hover {
+  border-color: #ebb609;
+}
+section div.niveles div.card div.card-body h5.tituloDelNivel {
+  font-weight: 700;
+  text-align: center;
+  color: #050536;
+  transition: 0.3s;
+  text-decoration: none;
+}
+section div.niveles div.card div.card-body h5.tituloDelNivel:hover {
+  color: #ebb609;
 }
 
 footer {
+  padding: 10px 0;
   background-color: #050536;
 }
 @media (min-width: 576px) {

@@ -1,0 +1,168 @@
+// card de Index
+section{
+    display: $d-b;
+    @extend %section;
+    div.education{
+        text-align: $cr;
+        justify-content: $cr;
+        div.aprendiendo{
+            background-color: $clr-3;
+            border: none;
+            h2{
+                font-weight:bold;
+            }
+        }
+        div.nvl{
+            @extend %nvl;
+            div.aprendiendoCard{
+                border-color: $clr-3;
+                h3.cardHeader{
+                    background-color: $clr-3;
+                    margin-bottom: 8px;
+                }
+                img.card-img{
+                    @extend %img;
+                }
+                p.card-text{
+                    font-size: $p-fs;
+                }
+            }
+        }
+    }
+}
+section {
+    display: $d-b;
+    @extend %section;
+    div.secNiveles{
+        text-align: $cr!important;
+        div.nvlEducativo{
+            justify-content: $cr;
+            border-color: $clr-3;
+            margin-bottom: 8px;
+            h2{
+                font-weight: bold;
+            }
+        }
+        div.nvl{
+            @extend %nvl;
+            @extend %img;
+            h4{
+                margin-bottom: 8px;
+            }
+        }
+    }
+}
+
+// cards de  Nosotros
+section{
+    display: $d-b;
+    @extend %section;
+    div.valor{
+        justify-content: $cr;
+        div.valores{
+            text-align: $cr;
+            width: $w;
+            h2{
+                h2:before, h2::after {
+                    content: "";
+                    width: 50px;
+                    height: 2px;
+                    background: #ebb609 ;
+                    display: inline-block;
+                }
+                h2:before {
+                    margin: 0 15px 10px 0;
+                }
+                h2::after {
+                    margin: 0 15px 10px 0;
+                }
+            }
+        }
+        div.cartaAmarilla{
+            margin: 0.25rem!important;
+            max-width: 15rem;
+            @include cartasValores($clr-2, $clr-1);
+            div.card-header{
+                font-weight: $f-w;
+            }
+        }
+        div.cartaOscura{
+            margin: 0.25rem!important;
+            max-width: 15rem;
+            @include cartasValores($clr-1, $clr-3);
+            div.card-header{
+                font-weight: $f-w;
+            }
+        }
+    }
+}
+// Es una card aunque aqui no se vea 
+section{
+    display: $d-b;
+    @extend %section;
+    div.colaborador{
+        text-align: $cr;
+        width: $w;
+        h4{
+            text-transform: uppercase;
+            font-weight: $f-w;
+        }
+    }
+    div.personal{
+        @extend %nvl;
+        text-align: $cr;
+        img.imgC{
+            @extend %img;
+        }
+    }
+}
+
+// cards de Niveles
+section{
+    display: $d-b;
+    div.niveles{
+        display: flex;
+        align-items: stretch;
+        div.card{
+            border: 0;
+            padding: 0 30px;
+            position: relative;
+            div.card-img{
+                width: calc(100% + 60px);
+                margin-left: -30px;
+                overflow: hidden;
+                z-index: 9;
+                border-radius: 0;
+                img.imgNiveles{
+                    max-width: 100%;
+                    transition: all 0.3s ease-in-out;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            div.card-body{
+                z-index: 10;
+                background: $clr-3;
+                border-top: 4px solid $clr-3;
+                padding: 30px;
+                box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+                margin-top: -60px;
+                transition: 0.3s;
+                &:hover{
+                    border-color: $clr-2;
+                }
+                h5.tituloDelNivel{
+                    font-weight: 700;
+                    text-align: $cr;
+                    color: $clr-1;
+                    transition: 0.3s;
+                    text-decoration: none;
+                    &:hover{ 
+                        color: $clr-2;
+                    }
+                }
+            }
+        }
+    }
+}

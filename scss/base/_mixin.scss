@@ -1,4 +1,11 @@
-@mixin cartasValores($bg-clr, $max-w){
+@mixin cartasValores($bg-clr, $clr){
     background-color: $bg-clr;
-    max-width: $max-w;
+    color: $clr;
 }
+
+@mixin media($breakpoint, $ht) {
+   width: map-get($breakpoints, lg);
+   height: $ht;
+
+}
+

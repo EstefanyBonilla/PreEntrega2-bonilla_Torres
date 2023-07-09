@@ -2,35 +2,38 @@ header{
     height: $h;
     nav.navbar{
         padding: 0;
-        a.navbar-brand{
-            display: flex;
-            padding-top: 0.25rem;
-            img.logo{
-                border-radius: 50%;
-            }
-            .titulo{
-                padding-left: map-get($titulo, p-l);
-                padding-top:  map-get($titulo, p-t); 
-                padding-bottom:  map-get($titulo, p-b);
-                margin-bottom:  map-get($titulo, m-b);
-                color:  map-get($titulo, clr);
-                &:hover {
-                    color: $clr-5;
+        div.container-fluid{
+            a.navbar-brand{
+                display: flex;
+                padding-top: 0.25rem;
+                img.logo{
+                    border-radius: 50%;
+                }
+                h1.titulo{
+                    padding-left: map-get($titulo, p-l)!important;
+                    padding-top:  map-get($titulo, p-t)!important; 
+                    padding-bottom:  map-get($titulo, p-b)!important;
+                    margin-bottom:  map-get($titulo, m-b)!important;
+                    color:  map-get($titulo, clr)!important;
+                    font-weight: map-get($titulo, fwd)!important;
+                    &:hover {
+                        color: $clr-4!important;
+                    }
                 }
             }
-        }
-        button.navbar-toggler{
-            background-color: $clr-3;
-        }
-        div.offcanvas{
-            width: auto;
-            ul.listaDesosrdenada{
-                font-weight: $f-w;
-                justify-content: end;
-                a.nav-link{
-                    color: $clr-1;
-                    &:hover{ 
-                        color: $clr-2;
+            button.navbar-toggler{
+                background-color: $clr-3;
+            }
+            div.offcanvas{
+                width: auto;
+                ul.listaDesosrdenada{
+                    font-weight: $f-w;
+                    justify-content: end;
+                    a.nav-link{
+                        color: $clr-1;
+                        &:hover{ 
+                            color: $clr-2;
+                        }
                     }
                 }
             }

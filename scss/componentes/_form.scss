@@ -1,0 +1,105 @@
+// forma de niveles
+section{
+    display: $d-b;
+    div.formaContacto{
+        width: $w;
+        height: 100%;
+        div.area{
+            flex-shrink: 1;
+            @media (min-width: 992px){
+                div.area{
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+            }
+            form.cForm{
+                background-color: $clr-3;
+                height: 350px;
+                legend.formTitulo{
+                    text-align: $cr;
+                    font-size: 2rem;
+                    color: $clr-1;
+                    font-weight: $f-w; 
+                    line-height: normal; 
+                }
+                div.form-group{
+                    margin-bottom: 15px;
+                    input.form-control{
+                        background-color: $clr-3;
+                        border-color: $clr-6;
+                    }
+                }
+                div.boton{
+                    justify-content: $cr;
+                    button.btnAll{
+                        @extend %btnAll
+                    } 
+                }
+            }   
+        }
+        div.area{
+            flex-shrink: 1;
+            @media (min-width: 992px){
+                .area{
+                    flex: 0 0 auto;
+                    width: 50%;
+                }
+            }
+            img.imgF{
+                vertical-align: middle;
+                height: 100%;
+            }
+        }
+    } 
+}
+
+
+// forma de Contacto
+section{
+    display: $d-b;
+    div.formaContacto{
+        width: $w;
+        height: 100%;
+        div.fCol{
+            width: 60%;
+            background-color: $clr-2;
+            border-radius: 5%;
+            height: 420px;
+            @media screen and (max-width: 992px){
+                height: 470px;
+            }
+            form.cFor{
+                background-color: $clr-2;
+                border-radius: 5%;
+                legend.formTitulo{
+                    text-align: $cr;
+                    font-size: 2rem;
+                    color: $clr-1;
+                    font-weight: $f-w; 
+                    line-height: normal; 
+                    margin-top: 1rem;
+                    margin-bottom: 0.5rem;
+                    @media screen and (max-width: 768px){
+                        font-size: 1.5rem;
+                    }
+                }
+                div.form-group{
+                    padding-top: 15px;
+                    margin-bottom: 15px;
+                    input.form-control{
+                        background-color: $clr-3;
+                        border-color: $clr-6;
+                        margin-bottom: 15px;
+                    }
+                }
+                div.boton{
+                    justify-content: $cr;
+                    button.btnAll{
+                        @extend %btnAll
+                    } 
+                }
+            }  
+        }    
+    } 
+}
+    

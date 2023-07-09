@@ -1,0 +1,34 @@
+
+
+article{
+    
+    hr.linea{
+        @extend %hr;
+    }
+    div.nvl{
+        @extend %nvl;
+        a.fTittle{
+            justify-content: $cr!important;
+            @extend %fTittle;
+            img.fLogo{
+                width: 40!important;
+                border-radius: 50%;
+            }
+            p.fTitulo{
+                @extend %fTitulo
+            }
+        }
+    }
+    div.fContent{
+        @extend %nvl;
+        @extend %fContent;
+        h4.leyenda{
+            text-align: $cr;
+        }
+    }
+    div.mAp{
+        @extend %nvl;
+        @extend %fContent;
+        padding-bottom: 0.25rem;
+    }
+}

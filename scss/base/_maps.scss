@@ -1,8 +1,10 @@
+
 $titulo:(
     p-l: 8px,
     p-b: 0,
-    p-t: 7px,
+    p-t: 4px,
     m-b: 0,
+    fwd: bold,
     clr: #050536,  
 );
 
@@ -11,4 +13,13 @@ $stitulo:(
     f-s: 32px,
     f-: 500,
     m-b: 0,
+);
+
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
 );

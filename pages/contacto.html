@@ -83,93 +83,89 @@
     <!-- Header -->
 
     <!-- Main -->
-    <main class="container index">
+    <main>
+        <section class="container">
+            <section data-aos="fade-up">
+                <div class="row info m-lg-4">
+                    <!-- Grid column -->
+                    <div class="col-lg-6 order-1 order-lg-2 divImgPresentacion" data-aos="fade-left" data-aos-delay="100">
+                        <!-- Imagen -->
+                        <img src="../img/maestra.jpg" class="img-fluid imgAnimada"  alt="Niños emocionados con maestra">
+                        <!-- imagen -->
+                    </div>
+                    <!-- Grid column -->
 
-        <!-- Section descripcion -->
-        <section class="row  m-lg-4" data-aos="fade-up">
-            <!-- Grid column -->
-            <div class="col-lg-6 order-1 order-lg-2 divImgPresentacion" data-aos="fade-left" data-aos-delay="100">
-                <!-- Imagen -->
-                <img src="../img/maestra.jpg" class="img-fluid "  alt="Niños emocionados con maestra">
-                <!-- imagen -->
-            </div>
-            <!-- Grid column -->
+                    <!-- Grid column -->
+                    <div class="col-lg-6 order-2 order-lg-1 divContenido">
+                        <!-- Texto -->
+                        <h4>Nos encantaria conocerte
+                        </h4>
+                        <!-- Texto -->
+                        <hr class="m-0 linea">
+                        <!-- Texto -->
+                        <text  class="fs-5">Sabemos que la educacion de tus pequeños es lo mas importante y por ello estamos dispuestos a brindarte toda la informacion que necesites.
+                        </text>
+                        <!-- Texto -->
+                    </div>
+                    <!-- Grid column -->
+                </div>
+            <!-- Section descripcion -->
+            </section>
 
-            <!-- Grid column -->
-            <div class="col-lg-6 order-2 order-lg-1 justify-content-center divContenido">
-                <!-- Texto -->
-                <h4>Nos encantaria conocerte
-                </h4>
-                <!-- Texto -->
-                <hr>
-                <!-- Texto -->
-                <text  class="fs-5">Sabemos que la educacion de tus pequeños es lo mas importante y por ello estamos dispuestos a brindarte toda la imformacion que necesites.
-                </text>
-                <!-- Texto -->
-            </div>
-            <!-- Grid column -->
-        </section>
-        <!-- Section descripcion -->
-        
-        <!-- Forma de contacto  -->
-        <section class="formaContacto">
-            <div class="row justify-content-center  align-items-center ">
-                <div class=" col-11 col-md-8">
-                    <div class="well well-sm ">
-                        <form class="form-horizontal area" method="post">
-                            <fieldset>
-                                <legend class="text-center ">Genera tu cita</legend>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                  
-                                        <input id="fname" required name="name" type="text" placeholder="Nombre del padre de familia" class="form-control">
-                                    
-                                </div>
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
-                                    
-                                        <input id="lname" required name="name" type="text" placeholder="Nombre completo del Alumno" class="form-control">
-                                   
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
-                                
-                                        <input id="email" name="email" type="text" placeholder="Correo electrónico" class="form-control">
-                                    
-                                </div>
-        
-                                <div class="form-group">
-                                    <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
-                                   
-                                        <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
-                                    
-                                </div>
-        
-                                <div class="form-group">
-                                    
-                                    <button type="submit" class="btn btn-primary btn-lg btnAll">Agendar cita</button>
-                                
-                                </div>
-                            </fieldset>
-                        </form>
+            <!-- Forma de contacto  -->
+            <section>
+                <div class="row formaContacto justify-content-center  align-items-center ">
+                    <div class="col-7 fCol">
+                        <!-- Forma cita -->
+                        <form class="form-horizontal cFor" method="post">
+                            <!-- Texto -->
+                            <legend class="formTitulo">Genera tu cita y te contactaremos</legend>
+
+                            <!-- Grupo de forma -->
+                            <div class="form-group">
+                                <!-- Entrada de texto -->
+                                <input id="fname" required name="name" type="text" placeholder="Nombre del padre de familia" class="form-control">
+                            </div>
+
+                            <!-- Grupo de forma -->
+                            <div class="form-group">
+                                <!-- Entrada de texto -->                                       
+                                <input id="lname" required name="name" type="text" placeholder="Nombre completo del Alumno" class="form-control">
+                            </div>
+
+                            <!-- Grupo de forma -->
+                            <div class="form-group">
+                                <!-- Entrada de texto -->  
+                                <input id="email" required name="email" type="text" placeholder="Correo electrónico" class="form-control">
+                            </div>
+
+                            <!-- Grupo de forma -->
+                            <div class="form-group">
+                                <!-- Entrada de texto -->  
+                                <input id="phone" required name="phone" type="text" placeholder="Telefono" class="form-control">
+                            </div>
+
+                            <div class="boton">
+                                <!-- Boton -->
+                                <button type="submit" class="btn btn-primary btn-lg btnAll">Agendar cita</button>
+                            </div>
+                        </form>    
                     </div>
                 </div>
-            </div>
+            </section>
+            <!-- forma de contacto -->
         </section>
-        <!-- forma de contacto -->
-
-        <hr class="m-0">
-
         <!-- section  -->
-        <section class="container">
+
+        <!-- articulo  -->
+        <article class="container-fluid">
+            <hr class="m-0 linea">
             <!-- Grid row -->
             <div class=" f-info row">
                 <!-- Grid column -->
                 <div class="f-content col-12 col-lg-4">
                     <!-- Enlace-->
-                    <a class="text-decoration-none pt-4 d-flex" href="../index.html">  
+                    <a class="text-decoration-none pt-4 d-flex justify-content-center" href="../index.html">  
                         <!-- Logo -->
                         <img src="../img/logo.png" alt="logo de la escuela" width="40" height="40" class="logo rounded-circle  "  >
                         <!-- Logo -->
@@ -201,35 +197,24 @@
 
                 <!-- Elementos de footer -->
             </div>
-        </section>
-        <!-- section  -->
+        </article>
+        <!-- articulo  -->
     </main>
     <!-- Main  -->
-
+    
    <!-- Footer -->
-   <footer class="container-fluid "> 
-        <!-- Elementos de footer -->
+   <footer class="container-fluid"> 
         <!-- Grid row-->
         <div class="row ">
-            <!-- Copyright -->
-            <div class="col-sm-6 fCopyright text-center">© 2023 Copyright:
-                <!-- Enlace-->
-                <a class="text-decoration-none text-white " href="../index.html">COLEGIO VS</a>
-                <!-- Enlace-->
-            </div>
-            <!-- Copyright -->
-
             <!-- Grid column -->
-            <div class="icons  col-sm-6  justify-content-center d-flex">
+            <div class="icons fInfo col-sm-6  justify-content-center d-flex">
                 <!-- Enlace-->
                 <a class="icon " href="https://www.facebook.com/">
                     <!-- Facebook icon -->
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
                         <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                     </svg>
-                    <!-- Facebook icon -->
                 </a>
-                <!-- Enlace-->
             
                 <!-- Enlace-->
                 <a class="icon " href="mailto:Usuario@COLEGIOVS.com">
@@ -237,9 +222,7 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
                     <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                     </svg>
-                    <!-- Mensaje icon -->
                 </a>
-                <!-- Enlace-->
                 
                 <!-- Enlace-->
                 <a class="icon " href="tel:555-555-5555">
@@ -247,16 +230,18 @@
                     <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
                     </svg>
-                    <!-- Telefono icon -->
                 </a>
-                <!-- Enlace-->
             </div> 
-            <!-- Grid column -->  
+            
+            <!-- Copyright -->
+            <div class=" col-sm-6 fCopyright fInfo text-center">© 2023 Copyright:
+                <!-- Enlace-->
+                <a class="text-decoration-none text-white colegioVS" href="index.html">COLEGIO VS</a>
+            </div>
         </div>
-        <!-- Grid row-->
-        <!-- Elementos de footer -->
     </footer>
     <!-- Footer -->
+
 
     <!-- Libreria JS -->
   <script src="../libreria/aos/aos.js"></script>

@@ -9,13 +9,13 @@ header{
                 border-radius: 50%;
             }
             .titulo{
-                padding-left: map-get( $titulo, p-l);
-                padding-bottom:  map-get( $titulo, p-b);
-                margin-bottom:  map-get($titulo,  m-b);
-                color:  map-get($titulo, clr);
-                padding-top:  map-get($titulo, p-t); 
+                padding-left: map-get($titulo, p-l)!important;
+                padding-bottom:  map-get($titulo, p-b)!important;
+                margin-bottom:  map-get($titulo,  m-b)!important;
+                color:  map-get($titulo, clr)!important;
+                padding-top:  map-get($titulo, p-t)!important; 
                 &:hover {
-                    color: $clr-5;
+                    color: $clr-4!important;
                 }
             }
         }
@@ -52,8 +52,8 @@ header{
                 }
             }
         }
-        p.subText{
-            font-size: 19px;
+        p.subTex{
+            font-size: 18px;
             margin-bottom:0;
             color: $clr-3;
         }

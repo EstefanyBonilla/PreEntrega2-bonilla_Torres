@@ -15,5 +15,8 @@
     "url": "https://github.com/EstefanyBonilla/PreEntrega2-bonilla_Torres/issues"
   },
   "homepage": "https://github.com/EstefanyBonilla/PreEntrega2-bonilla_Torres#readme",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  }
 }
