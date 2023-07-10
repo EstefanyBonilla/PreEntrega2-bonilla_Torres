@@ -11,7 +11,8 @@ article{
             justify-content: $cr!important;
             @extend %fTittle;
             img.fLogo{
-                width: 40!important;
+                width: 40px!important;
+                height: 40px!important;
                 border-radius: 50%;
             }
             p.fTitulo{

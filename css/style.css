@@ -103,7 +103,8 @@ article div.nvl a.fTittle {
   justify-content: center !important;
 }
 article div.nvl a.fTittle img.fLogo {
-  width: 40 !important;
+  width: 40px !important;
+  height: 40px !important;
   border-radius: 50%;
 }
 article div.fContent h4.leyenda {
@@ -125,6 +126,8 @@ header nav.navbar div.container-fluid a.navbar-brand {
 }
 header nav.navbar div.container-fluid a.navbar-brand img.logo {
   border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
 header nav.navbar div.container-fluid a.navbar-brand h1.titulo {
   padding-left: 8px !important;
@@ -192,37 +195,39 @@ header {
 header nav.navbar {
   padding: 0;
 }
-header nav.navbar a.navbar-brand {
+header nav.navbar div.container-fluid a.navbar-brand {
   display: flex;
   padding-top: 0.25rem;
 }
-header nav.navbar a.navbar-brand img.logo {
+header nav.navbar div.container-fluid a.navbar-brand img.logo {
   border-radius: 50%;
+  height: 50px;
+  width: 50px;
 }
-header nav.navbar a.navbar-brand .titulo {
+header nav.navbar div.container-fluid a.navbar-brand h1.titulo {
   padding-left: 8px !important;
   padding-bottom: 0 !important;
   margin-bottom: 0 !important;
   color: #050536 !important;
   padding-top: 4px !important;
 }
-header nav.navbar a.navbar-brand .titulo:hover {
+header nav.navbar div.container-fluid a.navbar-brand h1.titulo:hover {
   color: #184e8d !important;
 }
-header nav.navbar button.navbar-toggler {
+header nav.navbar div.container-fluid button.navbar-toggler {
   background-color: #ffffff;
 }
-header nav.navbar div.offcanvas {
+header nav.navbar div.container-fluid div.offcanvas {
   width: auto;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada {
   font-weight: bold;
   justify-content: end;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link {
   color: #050536;
 }
-header nav.navbar div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
   color: #ebb609;
 }
 header div.portada {
