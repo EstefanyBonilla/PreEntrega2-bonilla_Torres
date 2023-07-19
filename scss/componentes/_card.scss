@@ -59,6 +59,7 @@ section{
     @extend %section;
     div.valor{
         justify-content: $cr;
+        
         div.valores{
             text-align: $cr;
             width: $w;
@@ -113,6 +114,7 @@ section{
         @extend %nvl;
         text-align: $cr;
         border-color: $clr-3;
+       
         img.imgC{
             @extend %img;
         }

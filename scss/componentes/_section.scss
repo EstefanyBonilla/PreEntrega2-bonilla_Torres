@@ -6,7 +6,7 @@ section{
         display: flex;
         flex-wrap: wrap;
         transition-duration: 1s;
-        @media (min-width: 992px){
+        @media screen and (min-width: 992px){
             .info {
             margin: 1.5rem;
             }
@@ -15,14 +15,14 @@ section{
             opacity: 1;
             transform: none;
             transition-delay: .1s;
-            @media (min-width: 1200px){
+            @media screen and (min-width: 1200px){
                 .divImgPresentacion {
                 order: 2!important;
                 width: 50%;
                 flex: 0 0 auto;
                 }
             }
-            @media (max-width: 1199px) {
+            @media screen and (max-width: 1199px) {
                 .divImgPresentacion {
                 order: 1!important;
                 width: 100%;
@@ -41,7 +41,7 @@ section{
         div.divContenido{
             margin: auto!important;
             padding-top: 1rem!important;
-            @media (min-width: 1200px){
+            @media screen and (min-width: 1200px){
                 .divContenido {
                 order: 1!important;
                 width: 50%;
@@ -49,7 +49,7 @@ section{
                 justify-content: $cr;   
                 }
             }
-            @media (max-width: 1199px) {
+            @media screen and (max-width: 1199px) {
                 .divContenido{
                 order: 2!important;
                 width: 100%;
@@ -90,13 +90,13 @@ section{
         padding-bottom: 1rem;
     }
     div.filaImgs{
-        @media (min-width: 576px){
+        @media screen and (min-width: 576px){
             .filaImgs{
                 flex: 0 0 auto;
                 width: 50%;
             }
         }
-        @media (min-width: 992px){
+        @media screen and (min-width: 992px){
             .filaImgs{
                 flex: 0 0 auto;
                 width: 25%;

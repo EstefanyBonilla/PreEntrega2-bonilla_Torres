@@ -12,13 +12,7 @@ section div.personal, section div.secNiveles div.nvl, section div.education div.
   padding-left: 12px;
   padding-right: 12px;
 }
-@media (min-width: 992px) {
-  section div.personal .nvl, section div.secNiveles div.nvl .nvl, section div.education div.nvl .nvl, article div.mAp .nvl, article div.fContent .nvl, article div.nvl .nvl {
-    flex: 0 0 auto;
-    width: 33.33333333%;
-  }
-}
-@media (min-width: 576px) {
+@media screen and (min-width: 992px) {
   section div.personal .nvl, section div.secNiveles div.nvl .nvl, section div.education div.nvl .nvl, article div.mAp .nvl, article div.fContent .nvl, article div.nvl .nvl {
     flex: 0 0 auto;
     width: 33.33333333%;
@@ -371,7 +365,7 @@ section div.info {
   flex-wrap: wrap;
   transition-duration: 1s;
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   section div.info .info {
     margin: 1.5rem;
   }
@@ -381,14 +375,14 @@ section div.info div.divImgPresentacion {
   transform: none;
   transition-delay: 0.1s;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   section div.info div.divImgPresentacion .divImgPresentacion {
     order: 2 !important;
     width: 50%;
     flex: 0 0 auto;
   }
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   section div.info div.divImgPresentacion .divImgPresentacion {
     order: 1 !important;
     width: 100%;
@@ -406,7 +400,7 @@ section div.info div.divContenido {
   margin: auto !important;
   padding-top: 1rem !important;
 }
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   section div.info div.divContenido .divContenido {
     order: 1 !important;
     width: 50%;
@@ -414,7 +408,7 @@ section div.info div.divContenido {
     justify-content: center;
   }
 }
-@media (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   section div.info div.divContenido .divContenido {
     order: 2 !important;
     width: 100%;
@@ -448,13 +442,13 @@ section div.textPhotos {
   text-align: center;
   padding-bottom: 1rem;
 }
-@media (min-width: 576px) {
+@media screen and (min-width: 576px) {
   section div.filaImgs .filaImgs {
     flex: 0 0 auto;
     width: 50%;
   }
 }
-@media (min-width: 992px) {
+@media screen and (min-width: 992px) {
   section div.filaImgs .filaImgs {
     flex: 0 0 auto;
     width: 25%;

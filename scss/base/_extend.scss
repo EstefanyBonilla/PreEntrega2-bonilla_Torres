@@ -11,13 +11,7 @@
 %nvl{
     padding-left: 12px;
     padding-right: 12px;
-    @media (min-width: 992px){
-        .nvl{
-            flex: 0 0 auto;
-            width: 33.33333333%;
-        }
-    }
-    @media (min-width: 576px){
+    @media screen and (min-width: 992px){
         .nvl{
             flex: 0 0 auto;
             width: 33.33333333%;
