@@ -33,8 +33,9 @@
 
 %btnAll{
     animation: shakeX 25s ease;
+    transition: all 0.2s;
     display: $d-b;
-    width: 200px;
+    width: 170px;
     height: 45px;
     padding: 7px;
     margin: 0px auto;
@@ -54,10 +55,10 @@
     background-image: -o-linear-gradient(top, $clr-4, $clr-1);
     &:hover {
         display: $d-b;
-        width: 225px;
+        width: 174px;
         height: 45px;
         padding: 7px;
-        margin: 10px auto;
+        margin: 0px auto;
         font-size: $p-fs;
         font-weight: $f-w;
         text-align: $cr;

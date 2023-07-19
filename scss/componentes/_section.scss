@@ -39,6 +39,7 @@ section{
         }
         
         div.divContenido{
+            margin: auto!important;
             padding-top: 1rem!important;
             @media (min-width: 1200px){
                 .divContenido {
@@ -80,7 +81,7 @@ section{
         } 
     }
 }
-//  secciones Niveles
+//   secciones Niveles
 section{
     width: $w;
     div.textPhotos{

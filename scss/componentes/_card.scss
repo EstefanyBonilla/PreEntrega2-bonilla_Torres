@@ -80,7 +80,7 @@ section{
         }
         div.cartaAmarilla{
             margin: 0.25rem!important;
-            max-width: 15rem;
+            width: 17rem;
             @include cartasValores($clr-2, $clr-1);
             div.card-header{
                 font-weight: $f-w;
@@ -88,12 +88,13 @@ section{
         }
         div.cartaOscura{
             margin: 0.25rem!important;
-            max-width: 15rem;
+            width: 17rem;
             @include cartasValores($clr-1, $clr-3);
             div.card-header{
                 font-weight: $f-w;
             }
         }
+        
     }
 }
 // Es una card aunque aqui no se vea 
@@ -111,6 +112,7 @@ section{
     div.personal{
         @extend %nvl;
         text-align: $cr;
+        border-color: $clr-3;
         img.imgC{
             @extend %img;
         }

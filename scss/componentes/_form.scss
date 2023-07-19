@@ -65,8 +65,12 @@ section{
             background-color: $clr-2;
             border-radius: 5%;
             height: 420px;
-            @media screen and (max-width: 992px){
-                height: 470px;
+            @media screen and (max-width: 768px){
+                width: 80%;
+            }
+            @media screen and (max-width: 576px){
+                width: 90%;
+                margin-left: 20px;
             }
             form.cFor{
                 background-color: $clr-2;

@@ -24,17 +24,22 @@ header{
                 }
             }
             button.navbar-toggler{
-                background-color: $clr-3;
+                background-color: $clr-3!important;
             }
             div.offcanvas{
+                background-color: rgb(248, 248, 248)!important;
                 width: auto;
+                justify-content: center;
+                
                 ul.listaDesosrdenada{
                     font-weight: $f-w;
                     justify-content: end;
-                    a.nav-link{
-                        color: $clr-1;
+                    a#paginas{
+                        color: $clr-1!important;
+                        padding-top: 15px!important;
+                        padding-bottom: 15px!important;
                         &:hover{ 
-                            color: $clr-2;
+                            color: $clr-2!important;
                         }
                     }
                 }

@@ -1,11 +1,10 @@
+//  Primero se importan los archivos de base para que se lean primero y poder llamarlos en layout
  @import './base/vars';
  @import'./base/colors';
  @import './base/maps';
  @import './base/extend';
  @import'./base/mixin';
  
-
-//  Primero se importan los archivos de base para que se lean primero y poder llamarlos en layout
 
 @import './componentes/content';
 @import './componentes/header';

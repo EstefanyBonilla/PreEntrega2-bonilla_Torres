@@ -33,8 +33,9 @@ section div.personal img.imgC, section div.secNiveles div.nvl, section div.educa
 
 section button.btn a.btnAll, section div.formaContacto div.fCol form.cFor div.boton button.btnAll, section div.formaContacto div.area form.cForm div.boton button.btnAll {
   animation: shakeX 25s ease;
+  transition: all 0.2s;
   display: block;
-  width: 200px;
+  width: 170px;
   height: 45px;
   padding: 7px;
   margin: 0px auto;
@@ -55,10 +56,10 @@ section button.btn a.btnAll, section div.formaContacto div.fCol form.cFor div.bo
 }
 section button.btn a.btnAll:hover, section div.formaContacto div.fCol form.cFor div.boton button.btnAll:hover, section div.formaContacto div.area form.cForm div.boton button.btnAll:hover {
   display: block;
-  width: 225px;
+  width: 174px;
   height: 45px;
   padding: 7px;
-  margin: 10px auto;
+  margin: 0px auto;
   font-size: 19px;
   font-weight: bold;
   text-align: center;
@@ -141,20 +142,24 @@ header nav.navbar div.container-fluid a.navbar-brand h1.titulo:hover {
   color: #184e8d !important;
 }
 header nav.navbar div.container-fluid button.navbar-toggler {
-  background-color: #ffffff;
+  background-color: #ffffff !important;
 }
 header nav.navbar div.container-fluid div.offcanvas {
+  background-color: rgb(248, 248, 248) !important;
   width: auto;
+  justify-content: center;
 }
 header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada {
   font-weight: bold;
   justify-content: end;
 }
-header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link {
-  color: #050536;
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a#paginas {
+  color: #050536 !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
-header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a.nav-link:hover {
-  color: #ebb609;
+header nav.navbar div.container-fluid div.offcanvas ul.listaDesosrdenada a#paginas:hover {
+  color: #ebb609 !important;
 }
 header #inicio {
   width: 100%;
@@ -317,9 +322,15 @@ section div.formaContacto div.fCol {
   border-radius: 5%;
   height: 420px;
 }
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
   section div.formaContacto div.fCol {
-    height: 470px;
+    width: 80%;
+  }
+}
+@media screen and (max-width: 576px) {
+  section div.formaContacto div.fCol {
+    width: 90%;
+    margin-left: 20px;
   }
 }
 section div.formaContacto div.fCol form.cFor {
@@ -392,6 +403,7 @@ section div.info div.divImgPresentacion img.imgAnimada {
   height: auto;
 }
 section div.info div.divContenido {
+  margin: auto !important;
   padding-top: 1rem !important;
 }
 @media (min-width: 1200px) {
@@ -534,7 +546,7 @@ section div.valor div.valores h2 h2::after {
 }
 section div.valor div.cartaAmarilla {
   margin: 0.25rem !important;
-  max-width: 15rem;
+  width: 17rem;
   background-color: #ebb609;
   color: #050536;
 }
@@ -543,7 +555,7 @@ section div.valor div.cartaAmarilla div.card-header {
 }
 section div.valor div.cartaOscura {
   margin: 0.25rem !important;
-  max-width: 15rem;
+  width: 17rem;
   background-color: #050536;
   color: #ffffff;
 }
@@ -564,6 +576,7 @@ section div.colaborador h4 {
 }
 section div.personal {
   text-align: center;
+  border-color: #ffffff;
 }
 section {
   display: block;
